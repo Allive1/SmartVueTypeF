@@ -1,0 +1,56 @@
+apply plugin: 'com.android.model.application'
+
+model {
+    android {
+        compileSdkVersion = 23
+        buildToolsVersion = "23.0.1"
+
+        defaultConfig.with {
+            applicationId = "com.vsu.smartvuetypef"
+            minSdkVersion.apiLevel = 19
+            targetSdkVersion.apiLevel = 19
+
+        }
+
+    }
+
+        android.ndk {
+            moduleName = "smartvue"
+            CFlags += "-DANDROID_NDK"
+            ldLibs += ["android","opencv2", "log"]
+            cppFlags  += "-I${file("src/main/jni/prebuilts/include")}".toString()
+        }
+
+        android.buildTypes {
+            release {
+                minifyEnabled = false
+                proguardFiles += file('proguard-android.pro')
+            }
+        }
+
+    android.productFlavors {
+        create("flavor1") {
+            applicationId = "com.app"
+        }
+    }
+
+    // Configures source set directory.
+    android.sources {
+        main {
+            java {
+                source {
+                    srcDir 'src'
+                }
+            }
+        }
+    }
+    }
+
+dependencies {
+    compile project(':opencv')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.parse:parse-android:1.+'
+    compile 'com.android.support:support-v4:23.1.0'
+    compile 'com.android.support:support-v13:23.1.0'
+}
