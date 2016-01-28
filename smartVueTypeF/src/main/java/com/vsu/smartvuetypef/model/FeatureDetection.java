@@ -21,6 +21,8 @@ import org.opencv.ml.CvSVMParams;
 import org.opencv.objdetect.CascadeClassifier;
 import org.opencv.objdetect.Objdetect;
 
+;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 
@@ -41,10 +43,10 @@ public class FeatureDetection extends Fragment implements CvCameraViewListener2 
 	private Point center = new Point(720 / 2, 576 / 2);
 	protected Point origin = new Point(720 / 2, 576 / 2);
 	private double ticks;
-	
+
 	private boolean mStopThread = false;
 	protected boolean found;
-	
+
 	private float mRelativeFaceSize;
 	private int notFoundCount, mAbsoluteFaceSize, frameSize;// train_files = 5;
 
@@ -55,8 +57,9 @@ public class FeatureDetection extends Fragment implements CvCameraViewListener2 
 	private Thread mThread;
 
 	private int learn_frames, type = 1;// train_index = 0;
+	public static int foundFace = -1;
 
-	
+
 	CvSVMParams params2 = null;
 	CvSVM svm = null;
 
@@ -65,71 +68,6 @@ public class FeatureDetection extends Fragment implements CvCameraViewListener2 
 	protected Point predCenter;
 
 	protected double[] predWidth, predHeight, predX, predY;
-
-	protected void setCameraView(CameraBridgeViewBase openView) {
-		mOpenCvCameraView = openView;
-		mOpenCvCameraView.setCvCameraViewListener(this);
-		mThread = new Thread(new CameraWorker());
-		mThread.start();
-	}
-
-	@Override
-	public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
-		// TODO Auto-generated method stub
-		mRgba = inputFrame.rgba();
-		mGray = inputFrame.gray();
-		formatMat();
-		return mRgba;
-	}
-
-	@Override
-	public void onCameraViewStarted(int width, int height) {
-		// TODO Auto-generated method stub
-		mGray = new Mat();
-		mRgba = new Mat();
-		state = new Mat(6, 1, CvType.CV_32FC1);
-		measurement = new Mat(4, 1, CvType.CV_32FC1);
-		initKalmanFilter();
-	}
-
-	public void initKalmanFilter() {
-		if (KF == null) {
-			KF = new MyKalmanFilter(6, 4, 6, CvType.CV_32FC1);
-			Core.setIdentity(KF.transitionMatrix);
-			KF.measurementMatrix.put(0, 0, 1.0f);
-			KF.measurementMatrix.put(1, 1, 1.0f);
-			KF.measurementMatrix.put(2, 4, 1.0f);
-			KF.measurementMatrix.put(3, 5, 1.0f);
-			Core.setIdentity(KF.measurementNoiseCov, new Scalar(1e-1));
-		}
-	}
-
-	@Override
-	public void onCameraViewStopped() {
-		// TODO Auto-generated method stub
-		mGray.release();
-		mRgba.release();
-	}
-
-	public void enableCameraView(int index) {
-		// mOpenCvCameraView.enableFpsMeter();
-		mOpenCvCameraView.setCameraIndex(index);
-		mOpenCvCameraView.enableView();
-	}
-
-	public void transposeMat() {
-		m = Imgproc.getRotationMatrix2D(center, 90, .5);
-		Imgproc.warpAffine(mRgba, mRgba, m, mRgba.size());
-		Imgproc.warpAffine(mGray, mGray, m, mGray.size());
-	}
-
-	public void flipMat() {
-		Core.flip(mGray, mGray, 1);
-	}
-
-	public void formatMat() {
-		transposeMat();
-	}
 
 	public void detectFaces() {
 		if (mAbsoluteFaceSize == 0) {
@@ -357,6 +295,80 @@ public class FeatureDetection extends Fragment implements CvCameraViewListener2 
 		}
 	}
 
+	public void enableCameraView(int index) {
+		// mOpenCvCameraView.enableFpsMeter();
+		mOpenCvCameraView.setCameraIndex(index);
+		mOpenCvCameraView.enableView();
+	}
+
+	public void flipMat() {
+		Core.flip(mGray, mGray, 1);
+	}
+
+	public void formatMat() {
+		transposeMat();
+	}
+
+	public void initKalmanFilter() {
+		if (KF == null) {
+			KF = new MyKalmanFilter(6, 4, 6, CvType.CV_32FC1);
+			Core.setIdentity(KF.transitionMatrix);
+			KF.measurementMatrix.put(0, 0, 1.0f);
+			KF.measurementMatrix.put(1, 1, 1.0f);
+			KF.measurementMatrix.put(2, 4, 1.0f);
+			KF.measurementMatrix.put(3, 5, 1.0f);
+			Core.setIdentity(KF.measurementNoiseCov, new Scalar(1e-1));
+		}
+	}
+
+	@Override
+	public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
+		// TODO Auto-generated method stub
+		mRgba = inputFrame.rgba();
+		mGray = inputFrame.gray();
+		formatMat();
+		detectKalmanFaces();
+		return mRgba;
+	}
+
+	@Override
+	public void onCameraViewStarted(int width, int height) {
+		// TODO Auto-generated method stub
+		mGray = new Mat();
+		mRgba = new Mat();
+		state = new Mat(6, 1, CvType.CV_32FC1);
+		measurement = new Mat(4, 1, CvType.CV_32FC1);
+		initKalmanFilter();
+	}
+
+	@Override
+	public void onCameraViewStopped() {
+		// TODO Auto-generated method stub
+		mGray.release();
+		mRgba.release();
+	}
+
+	protected void setCameraView(CameraBridgeViewBase openView) {
+		mOpenCvCameraView = openView;
+		mOpenCvCameraView.setCvCameraViewListener(this);
+		mThread = new Thread(new CameraWorker());
+		mThread.start();
+	}
+
+
+
+	public void transposeMat() {
+		m = Imgproc.getRotationMatrix2D(center, 90, .5);
+		Imgproc.warpAffine(mRgba, mRgba, m, mRgba.size());
+		Imgproc.warpAffine(mGray, mGray, m, mGray.size());
+	}
+
+
+
+
+
+
+
 	private void match_template(Rect area, Mat mTemplate) {
 		Point matchLoc;
 		Mat mROI = mGray.submat(area);
@@ -369,27 +381,27 @@ public class FeatureDetection extends Fragment implements CvCameraViewListener2 
 		Mat mResult = new Mat(result_cols, result_rows, CvType.CV_8U);
 
 		switch (type) {
-		case 0:
-			Imgproc.matchTemplate(mROI, mTemplate, mResult, Imgproc.TM_SQDIFF);
-			break;
-		case 1:
-			Imgproc.matchTemplate(mROI, mTemplate, mResult,
-					Imgproc.TM_SQDIFF_NORMED);
-			break;
-		case 2:
-			Imgproc.matchTemplate(mROI, mTemplate, mResult, Imgproc.TM_CCOEFF);
-			break;
-		case 3:
-			Imgproc.matchTemplate(mROI, mTemplate, mResult,
-					Imgproc.TM_CCOEFF_NORMED);
-			break;
-		case 4:
-			Imgproc.matchTemplate(mROI, mTemplate, mResult, Imgproc.TM_CCORR);
-			break;
-		case 5:
-			Imgproc.matchTemplate(mROI, mTemplate, mResult,
-					Imgproc.TM_CCORR_NORMED);
-			break;
+			case 0:
+				Imgproc.matchTemplate(mROI, mTemplate, mResult, Imgproc.TM_SQDIFF);
+				break;
+			case 1:
+				Imgproc.matchTemplate(mROI, mTemplate, mResult,
+						Imgproc.TM_SQDIFF_NORMED);
+				break;
+			case 2:
+				Imgproc.matchTemplate(mROI, mTemplate, mResult, Imgproc.TM_CCOEFF);
+				break;
+			case 3:
+				Imgproc.matchTemplate(mROI, mTemplate, mResult,
+						Imgproc.TM_CCOEFF_NORMED);
+				break;
+			case 4:
+				Imgproc.matchTemplate(mROI, mTemplate, mResult, Imgproc.TM_CCORR);
+				break;
+			case 5:
+				Imgproc.matchTemplate(mROI, mTemplate, mResult,
+						Imgproc.TM_CCORR_NORMED);
+				break;
 		}
 
 		Core.MinMaxLocResult mmres = Core.minMaxLoc(mResult);
@@ -453,18 +465,18 @@ public class FeatureDetection extends Fragment implements CvCameraViewListener2 
 		}
 		int height = mGray.rows();
 		switch (minfacesize) {
-		case 3:
-			mRelativeFaceSize = 0.3f;
-			break;
-		case 4:
-			mRelativeFaceSize = 0.4f;
-			break;
-		case 5:
-			mRelativeFaceSize = 0.5f;
-			break;
-		default:
-			mRelativeFaceSize = 0.2f;
-			break;
+			case 3:
+				mRelativeFaceSize = 0.3f;
+				break;
+			case 4:
+				mRelativeFaceSize = 0.4f;
+				break;
+			case 5:
+				mRelativeFaceSize = 0.5f;
+				break;
+			default:
+				mRelativeFaceSize = 0.2f;
+				break;
 		}
 
 		if (Math.round(height * mRelativeFaceSize) > 0) {
@@ -509,10 +521,11 @@ public class FeatureDetection extends Fragment implements CvCameraViewListener2 
 
 	public void onFaceRecognized() {
 		// Draw the prediction rectangle and center point on the preview
-					// frame
-					Core.circle(mRgba, predCenter, 2, PRE_CENTER_COLOR, -1);
-					Core.rectangle(mRgba, predRect.tl(), predRect.br(), PRE_FACE_COLOR,
-							2);
+		// frame
+		Core.circle(mRgba, predCenter, 2, PRE_CENTER_COLOR, -1);
+		Core.rectangle(mRgba, predRect.tl(), predRect.br(), PRE_FACE_COLOR,
+				2);
+		foundFace = predRect.width;
 	}
 
 	public void runTemplateMatcher(Rect roi) {

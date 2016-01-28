@@ -1,39 +1,42 @@
 package main.java.com.vsu.smartvuetypef;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import main.java.com.vsu.smartvuetypef.features.FlipFragment;
 import main.java.com.vsu.smartvuetypef.features.ZoomFragment;
+import main.java.com.vsu.smartvuetypef.model.FeatureDetection;
+import main.java.com.vsu.smartvuetypef.model.MyKalmanFilter;
 import main.java.com.vsu.smartvuetypef.view.InstructionsFragment;
 
+import android.view.WindowManager;
 import android.widget.Toast;
-import android.content.Context;
-import android.os.Handler;
-import android.os.Looper;
-import android.os.Message;
+
+import org.opencv.core.Mat;
 
 
-public class SvActivity extends FragmentActivity implements InstructionsFragment.OnFragmentInteractionListener{
+public class SvActivity extends FragmentActivity implements InstructionsFragment.OnInstructionCompletedListener{
 	private static final String TAG = "SvActivity";
+
 	int random;
 	FragmentTransaction transaction;
 	FragmentManager manager;
 	int phase = 1;
     double mCalibrationFace=0;
-	Sample mSample;
 	Fragment features, instruct;
+	Fragment fragment;
 	private static SvActivity sInstance = null;
 	Toast toast;
-	private Context context;
+    public static FeatureDetection faceDetector;
+    private MyKalmanFilter KF = null;
+    int iscene = 0, f = 0;
+    //ZoomFragment.OnZoomChanged mZoomCallback;
 
 	// A static block that sets class fields
 	static {
@@ -41,58 +44,28 @@ public class SvActivity extends FragmentActivity implements InstructionsFragment
 		sInstance = new SvActivity();
 	}
 
-	private Handler mHandler = new Handler(Looper.getMainLooper()) {
-		public void handleMessage(Message msg) {
-			// Gets the image task from the incoming Message object.
-			// ZoomFragment task = (ZoomFragment) msg.obj;
-			switch (msg.what) {
-				case 0:
-					toast = Toast.makeText(context, "Instruction Failed",
-							Toast.LENGTH_SHORT);
-					toast.show();
-					break;
+    private Mat mGray;
+    private Mat mRgba;
+    private Mat state, measurement;
 
-				case 1:
-					toast = Toast.makeText(context, "Instruction Completed",
-							Toast.LENGTH_SHORT);
-					toast.show();
-					break;
-				default:
-					Log.d(TAG, "Handle failure");
-					break;
-			}
-		}
-	};
-
-	public void handleState(ZoomFragment task, int state, Context t) {
-		context = t;
-		//Log.d(TAG, "Context: " + context.toString());
-		Message completeMessage;
-		switch (state) {
-			// The task finished downloading and decoding the image
-			case 0:
-				completeMessage = mHandler.obtainMessage(state, task);
-				completeMessage.sendToTarget();
-				break;
-			case 1:
-				completeMessage = mHandler.obtainMessage(state, task);
-				completeMessage.sendToTarget();
-				break;
-		}
-	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.my_activity_main);
+		setContentView(R.layout.activity_main);
+        this.getWindow()
+                .addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
 		if (savedInstanceState == null) {
+			instruct = new InstructionsFragment();
+			//fragment = new ZoomFragment();
 			manager = getSupportFragmentManager();
 			transaction = manager.beginTransaction();
-			instruct = new InstructionsFragment();
-			transaction.replace(R.id.content_fragment, instruct);
+			transaction.add(R.id.content_fragment, instruct);
+            //transaction.add(R.id.content_fragment, zoomFragment);
 			transaction.addToBackStack("instruction");
 			transaction.commit();
-		}
+        }
 	}
 
 	@Override
@@ -144,53 +117,43 @@ public class SvActivity extends FragmentActivity implements InstructionsFragment
 		return super.onOptionsItemSelected(item);
 	}
 
-    @Override
-    public void onFragmentInteraction(int index) {
-
-    }
-
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 		outState.putDouble("caliFace", mCalibrationFace);
 	}
 
-	public void onReadyClick(int position, int faceAvg) {
-        mCalibrationFace = faceAvg;
-		switch (position) {
+	public void onReadyClick(int i) {
+        //mCalibrationFace = faceAvg;
+		switch (i) {
 		case 0:
-			Log.d(TAG, "Zoom Case");
-			ZoomFragment zoomFragment;
-					//(ZoomFragment)getFragmentManager().findFragmentById(R.id.content_fragment);
-			if(faceAvg==0)
-				zoomFragment = new ZoomFragment();
-			else
-				zoomFragment = ZoomFragment.newInstance(faceAvg);
-
-
+			//if(faceAvg==0)
+				fragment = new ZoomFragment();
+			//else
+			//	zoomFragment = ZoomFragment.newInstance(faceAvg);
 			transaction = getSupportFragmentManager().beginTransaction();
-			transaction.replace(R.id.content_fragment, zoomFragment);
-			transaction.addToBackStack("Zoom");
-			// Commit the transaction
+            transaction.replace(R.id.content_fragment, fragment);
+            transaction.addToBackStack("Zoom");
 			transaction.commit();
+
 			break;
 		case 1:
-			Log.d(TAG, "Flip Case");		
+			Log.d(TAG, "Flip Case");
 			/*FlipFragment flipFragment = new FlipFragment();		
 			transaction = getSupportFragmentManager().beginTransaction();
 			transaction.replace(R.id.pager, flipFragment);
 			transaction.addToBackStack("Flip");
 			setContentView(R.layout.fd_screen_slide);*/
-			
-			startActivity(new Intent(SvActivity.this, mSample.activityClass));
-	    
+
+			//startActivity(new Intent(SvActivity.this, mSample.activityClass));
+
 			// Commit the transaction
 			//transaction.commit();
 			break;
 		case 2:
 			Log.d(TAG, "Scroll Case");
 			//ScrollFragment scrollFragment = new ScrollFragment();
-			/*setContentView(R.layout.fd_surface_view);
+			/*setContentView(R.layout.feature_view);
 			transaction = getSupportFragmentManager().beginTransaction();
 			transaction.replace(R.id.content_fragment, scrollFragment);
 			transaction.addToBackStack("Scroll");
@@ -200,25 +163,44 @@ public class SvActivity extends FragmentActivity implements InstructionsFragment
 		default:
 			Log.d(TAG, "Default Case");
 			break;
-		}	
+		}
 	}
 
 	public static SvActivity getInstance() {
 		return sInstance;
 	}
 
-	private class Sample {
-        private CharSequence title;
-        private Class<? extends FragmentActivity> activityClass;
-
-        public Sample(int titleResId, Class<? extends FragmentActivity> activityClass) {
-            this.activityClass = activityClass;
-            this.title = getResources().getString(titleResId);
+    public void goNextFeature(){
+		f = 0;
+        switch (f) {
+            case 0:
+                Log.d(TAG, "ZoomControl Case");
+                fragment = new ZoomFragment();
+                transaction = manager.beginTransaction();
+                transaction.replace(R.id.content_fragment, fragment);
+                transaction.addToBackStack("ZoomControl");
+                // Commit the transaction
+                transaction.commit();
+                break;
+            case 1:
+                Log.d(TAG, "Flip Case");
+                fragment = new FlipFragment();
+                transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.content_fragment, fragment);
+                transaction.addToBackStack("Flip");
+                // Commit the transaction
+                transaction.commit();
+                break;
+            default:
+                Log.d(TAG, "Default Case");
+                transaction = getSupportFragmentManager().beginTransaction();
+                transaction.remove(instruct);
+                transaction.commit();
+                break;
         }
+    }
 
-        @Override
-        public String toString() {
-            return title.toString();
-        }
+    public interface OnFragmentInteractionListener {
+        void onClick();
     }
 }

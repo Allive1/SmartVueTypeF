@@ -7,6 +7,11 @@ public class Face {
 	public Face() {
 	}
 
+	public Face(int size){
+		faceSize = size;
+		time = 0;
+	}
+
 	public void saveFace(int face){
 		faceSize = face;
 	}

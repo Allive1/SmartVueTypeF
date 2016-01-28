@@ -7,14 +7,12 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="759dp">
+        android:layout_height="match_parent">
 
         <FrameLayout
             android:id="@+id/caliFrame"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true">
+            android:layout_height="match_parent">
 
             <include
                 layout="@layout/ocv_content"
@@ -32,22 +30,20 @@
             <include
                 android:id="@+id/phase_frag"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="766dp"
                 layout="@layout/phase_page"
                 android:textAlignment="center" />
 
         </FrameLayout>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:id="@+id/button"
+            android:layout_gravity="bottom|center_horizontal" />
+
     </FrameLayout>
 
-    <Button
-        android:id="@+id/next_button"
-        android:layout_width="161dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="108dp"
-        android:layout_marginStart="110dp"
-        android:text="@string/next"
-        android:layout_gravity="center_horizontal|bottom" />
 
-
-</LinearLayout><!-- From: file:/Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/res/layout/fragment_instructions_transition.xml -->
+</LinearLayout><!-- From: file:/Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/res/layout/instructions_transition.xml -->

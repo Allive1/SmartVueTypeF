@@ -26,6 +26,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v13.app.FragmentStatePagerAdapter;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
@@ -41,7 +42,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
 
-public class FlipFragment extends FeatureDetection {
+public class FlipFragment extends Fragment {
 	private static final int JAVA_DETECTOR = 0;
 	private static final int NUM_PAGES = 5;
 	private static final String TAG = "FlipFrag";
@@ -116,60 +117,7 @@ public class FlipFragment extends FeatureDetection {
 		}
 	};
 
-	protected BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(
-			this.getActivity()) {
-		@Override
-		public void onManagerConnected(int status) {
-			switch (status) {
-			case LoaderCallbackInterface.SUCCESS: {
-				Log.i(TAG, "OpenCV loaded successfully");
-				try {
-					// load cascade file from application resources
-					File mCascadeFile;
-					InputStream is = getResources().openRawResource(
-							R.raw.haarcascade_profileface);
 
-					File cascadeDir = mContext.getDir("cascade",
-							Context.MODE_PRIVATE);
-					mCascadeFile = new File(cascadeDir,
-							"haarcascade_profileface.xml");
-					FileOutputStream os = new FileOutputStream(mCascadeFile);
-
-					byte[] buffer = new byte[4096];
-					int bytesRead;
-					while ((bytesRead = is.read(buffer)) != -1) {
-						os.write(buffer, 0, bytesRead);
-					}
-
-					cascadeProfileFace = new CascadeClassifier(
-							mCascadeFile.getAbsolutePath());
-					if (cascadeProfileFace.empty()) {
-						Log.e(TAG,
-								"Failed to load frontal face cascade classifier");
-						cascadeProfileFace = null;
-					} else {
-						Log.i(TAG, "Loaded cascade classifier from "
-								+ mCascadeFile.getAbsolutePath());
-					}
-					buffer = null;
-					os.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-					Log.e(TAG, "Failed to load cascade. Exception thrown: " + e);
-				}
-				// mOpenCvCameraView.enableFpsMeter();
-				mOpenCvCameraView.setCameraIndex(0);
-				mOpenCvCameraView.enableView();
-
-			}
-				break;
-			default: {
-				super.onManagerConnected(status);
-			}
-				break;
-			}
-		}
-	};
 
 	public static FlipFragment newInstance() {
 		FlipFragment fragment = new FlipFragment();
@@ -236,10 +184,9 @@ public class FlipFragment extends FeatureDetection {
 		// assert view != null;
 
 		// Initialize OpenCV Camera View
-		mOpenCvCameraView = (CameraBridgeViewBase) view
-				.findViewById(R.id.fd_activity_surface_view);
-
-		mOpenCvCameraView.setCvCameraViewListener(this);
+		//mOpenCvCameraView = (CameraBridgeViewBase) view
+		//		.findViewById(R.id.fd_activity_surface_view);
+	//		mOpenCvCameraView.setCvCameraViewListener(this);
 
 		// Instantiate a ViewPager and a PagerAdapter.
 		mPager = (ViewPager) view.findViewById(R.id.pager);
@@ -320,37 +267,7 @@ public class FlipFragment extends FeatureDetection {
 		return mPageNumber;
 	}
 
-	@Override
-	public void onFaceRecognized() {
-		super.onFaceRecognized();
-		
-		// if a face turn has not yet been registered
-		if (System.currentTimeMillis() > (lastPageTurn + 2000)) {
-			runTurnCheck();
-		}
-		// if a face has been registered, the flip mechanism should be locked
-		//else 
-			//Log.d(TAG, "Flip Locked");
-		
-	}
 
-	@Override
-	public void formatMat() {
-		transposeMat();
-		searchForFace();
-	}
-
-	@Override
-	public void onResume() {
-		super.onResume();
-		OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_3,
-				this.getActivity(), mLoaderCallback);
-	}
-
-	public void detectFlippedKalmanFaces() {
-		flipMat();
-		detectKalmanFaces();
-	}
 
 	private static void unlockFlip() {
 		Message msg = flipStateHandler.obtainMessage();
@@ -358,7 +275,7 @@ public class FlipFragment extends FeatureDetection {
 				(System.currentTimeMillis() + 2000));
 	}
 
-	private void searchForFace() {
+	/*private void searchForFace() {
 		switch (searchMode) {
 		case 0:
 			// Reset turnable
@@ -447,9 +364,9 @@ public class FlipFragment extends FeatureDetection {
 			}
 			/*else{
 				Log.d(TAG,"Displacement: " + (Math.abs(moveFacePX-initialFacePX)));
-			}*/
+			}
 		}
-	}
+	}*/
 
 	private void resetFlipVars() {
 		initialFacePX = 0;

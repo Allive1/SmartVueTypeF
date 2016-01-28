@@ -9,16 +9,17 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
 
-import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
+import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
+import org.opencv.core.CvType;
 import org.opencv.core.Mat;
-import org.opencv.core.MatOfRect;
 import org.opencv.objdetect.CascadeClassifier;
 
 import com.parse.ParseObject;
+
 import main.java.com.vsu.smartvuetypef.model.FeatureDetection;
 import main.java.com.vsu.smartvuetypef.R;
 import main.java.com.vsu.smartvuetypef.SvActivity;
@@ -47,8 +48,7 @@ import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-public class ZoomFragment extends FeatureDetection implements
-		ZoomControl.OnZoomChangedListener {
+public class ZoomFragment extends FeatureDetection implements ZoomControl.OnZoomChangedListener{
 	private static final String TAG = "ZoomFragment";
 	public static final int JAVA_DETECTOR = 0;
 	public static final int NATIVE_DETECTOR = 1;
@@ -59,8 +59,7 @@ public class ZoomFragment extends FeatureDetection implements
 	int maxWidth = 720, maxHeight = 576,  phaseIndex = 0, faceSize, initZoom = -1, expectedLevel, phaseResult, totalPhases = 1;
 
 	static int stage = 0;
-
-	Face calibrationFDD = new Face(), currentFDD = new Face();
+	Face lkgFace = new Face();
 
 	long secBuffer, phaseStart, phaseEnd;
 	double ticks;
@@ -71,16 +70,14 @@ public class ZoomFragment extends FeatureDetection implements
 			decFont = "Please decrease text size", currentInstruction,
 			currentSample, ackMsg = "Phase Completed";
 
-	Context mContext;
-	static TextView mSampleView, mContentTextView, mInstrTextView,
+	public Context mContext;
+	static TextView mSampleView, contentTextView, mInstrTextView,
 			mContentView;
-	
-	static ZoomControl zoomStack;
-	MatOfRect face, faceBox;
-	Mat faceTemplate;
-	View showView, hideView, ocvView;
+
+	static ZoomControl zoomController;
+	View showView, hideView;
 	Animation in, out;
-	ValueAnimator instrAnim, fadeInstrOut, fadeSampleIn, fadeSampleOut;
+	ValueAnimator instrAnim;
 	ArrayList<Face> faceList = new ArrayList<Face>(),
 			calibrationFaces = new ArrayList<Face>();
 
@@ -96,66 +93,13 @@ public class ZoomFragment extends FeatureDetection implements
 	private ProgressBar calibrationProgress;
 	private static FrameLayout sContent, mContent, iContent;
 
+	private Face calibrationFace;
+	private int calibrationZoom;
+
 
 	//  Classifier Loader
-	private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(
-			this.getActivity()) {
-		@Override
-		public void onManagerConnected(int status) {
-			System.out.println("OpenCV Loaded: " + status);
-			switch (status) {
-				case LoaderCallbackInterface.SUCCESS: {
-					Log.i(TAG, "OpenCV loaded successfully");
-					try {
-						File mCascadeFile;
-						InputStream is = getResources().openRawResource(
-								R.raw.lbpcascade_frontalface);
 
-						File cascadeDir = mContext.getDir("cascade",
-								Context.MODE_PRIVATE);
-						mCascadeFile = new File(cascadeDir,
-								"lbpcascade_frontalface.xml");
-						FileOutputStream os = new FileOutputStream(mCascadeFile);
-
-						byte[] buffer = new byte[4096];
-						int bytesRead;
-						while ((bytesRead = is.read(buffer)) != -1) {
-							os.write(buffer, 0, bytesRead);
-						}
-
-						cascadeProfileFace = new CascadeClassifier(
-								mCascadeFile.getAbsolutePath());
-						if (cascadeProfileFace.empty()) {
-							Log.e(TAG,
-									"Failed to load frontal face cascade classifier");
-							cascadeProfileFace = null;
-						} else {
-							Log.i(TAG, "Loaded cascade classifier from "
-									+ mCascadeFile.getAbsolutePath());
-						}
-						is.close();
-						os.close();
-						System.out.println("OpenCV Loaded");
-						cascadeDir.delete();
-						mRgba = new Mat(576, 720, 24);
-						mGray = new Mat(576, 720, 24);
-					} catch (IOException e) {
-						e.printStackTrace();
-						Log.e(TAG, "Failed to load cascade. Exception thrown: " + e);
-					}
-					// mOpenCvCameraView.enableFpsMeter();
-					mOpenCvCameraView.setCameraIndex(0);
-					mOpenCvCameraView.enableView();
-
-				}
-				break;
-				default: {
-					super.onManagerConnected(status);
-				}
-				break;
-			}
-		}
-	};
+	private BaseLoaderCallback mLoaderCallback;
 
 	 // Class Constructor
     public static ZoomFragment newInstance(double avgFace) {
@@ -163,7 +107,6 @@ public class ZoomFragment extends FeatureDetection implements
         Bundle args = new Bundle();
         args.putDouble("calibrationFace", avgFace);
         fragment.setArguments(args);
-
         return fragment;
     }
 
@@ -171,10 +114,6 @@ public class ZoomFragment extends FeatureDetection implements
 		// Required empty public constructor
 		Log.d(TAG, "Zoom Constructor");
 		sActivity = SvActivity.getInstance();
-		if(mLoaderCallback==null)
-			Log.d(TAG, "Callback Null");
-		else
-			Log.d(TAG, "Callback Set");
 
 		phaseIn.play(instrAnim);
 
@@ -189,7 +128,13 @@ public class ZoomFragment extends FeatureDetection implements
 		out.setDuration(3000);
 
 
-		zoomStack = new ZoomControl(this);
+
+		zoomController = new ZoomControl(this);
+		zoomController.defaultZoom();
+		zoomController.setMode(1);
+
+		calibrationFace = new Face(170);
+		calibrationZoom = 1;
 
 		faceCheck = true;
 		faceSize = 0;
@@ -206,7 +151,66 @@ public class ZoomFragment extends FeatureDetection implements
 	@Override
 	public void onAttach(Context context) {
 		super.onAttach(context);
+        Log.d(TAG, "Attached");
 		mContext = context;
+		mLoaderCallback = new BaseLoaderCallback(
+				this.getActivity()) {
+			@Override
+			public void onManagerConnected(int status) {
+				System.out.println("OpenCV Loaded: " + status);
+				switch (status) {
+					case LoaderCallbackInterface.SUCCESS: {
+						Log.i(TAG, "OpenCV loaded successfully");
+
+						try {
+							File mCascadeFile;
+							InputStream is = mContext.getResources().openRawResource(
+									R.raw.lbpcascade_frontalface);
+
+							File cascadeDir = mContext.getDir("cascade",
+									Context.MODE_PRIVATE);
+							mCascadeFile = new File(cascadeDir,
+									"lbpcascade_frontalface.xml");
+							FileOutputStream os = new FileOutputStream(mCascadeFile);
+
+							byte[] buffer = new byte[4096];
+							int bytesRead;
+							while ((bytesRead = is.read(buffer)) != -1) {
+								os.write(buffer, 0, bytesRead);
+							}
+
+							cascadeProfileFace = new CascadeClassifier(
+									mCascadeFile.getAbsolutePath());
+							if (cascadeProfileFace.empty()) {
+								Log.e(TAG,
+										"Failed to load frontal face cascade classifier");
+								cascadeProfileFace = null;
+							} else {
+								Log.i(TAG, "Loaded cascade classifier from "
+										+ mCascadeFile.getAbsolutePath());
+							}
+							is.close();
+							os.close();
+							System.out.println("OpenCV Loaded");
+							cascadeDir.delete();
+							mRgba = new Mat(576, 720, 24);
+							mGray = new Mat(576, 720, 24);
+						} catch (IOException e) {
+							e.printStackTrace();
+							Log.e(TAG, "Failed to load cascade. Exception thrown: " + e);
+						}
+						// mOpenCvCameraView.enableFpsMeter();
+						mOpenCvCameraView.setCameraIndex(0);
+						mOpenCvCameraView.enableView();
+					}
+					break;
+					default: {
+						super.onManagerConnected(status);
+					}
+					break;
+				}
+			}
+		};
 	}
 
 	@Override
@@ -214,7 +218,6 @@ public class ZoomFragment extends FeatureDetection implements
 		super.onStart();
 		// Set instructions and text for this phase
 		Log.d(TAG, "Load create phase");
-		startSession();
 	}
 
 	@Override
@@ -223,7 +226,7 @@ public class ZoomFragment extends FeatureDetection implements
 		this.getActivity().getWindow()
 				.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		View view = inflater
-				.inflate(R.layout.fd_surface_view, container, false);
+				.inflate(R.layout.feature_view, container, false);
 		assert view != null;
 
 		// Initialize OpenCV Camera View
@@ -231,34 +234,16 @@ public class ZoomFragment extends FeatureDetection implements
 				.findViewById(R.id.opencv_view);
 		mOpenCvCameraView.setCvCameraViewListener(this);
 
-        // Display Content
-        mContent = (FrameLayout) view.findViewById(R.id.ContentFrame);
-		// Initialize text view
-		mContentTextView = (TextView) view.findViewById(R.id.sample_text_view);
+		// Display Content
+        mContent = (FrameLayout) view.findViewById(R.id.content_frame);
 
-//Setup views
-       // mContentView = (TextView) sContent
-         //       .findViewById(R.id.sample_text_view);
-        // initialize zoom levels
-        //zoomStack.defaultZoom();
-
-		// Display OCV
-		// OCVFrame = (FrameLayout) view.findViewById(R.id.CalibrationFrame);
-
-		// Instructions View
-		//iContent = (FrameLayout) inflater.inflate(R.layout.instruction_content,
+        // Sample View
+        //sContent = (FrameLayout) inflater.inflate(R.layout.sample_content,
 		//		container, false);
 
-		// Sample View
-		sContent = (FrameLayout) inflater.inflate(R.layout.sample_content,
-				container, false);
+		// Initialize text view
+		contentTextView = (TextView) view.findViewById(R.id.sample_text_view);
 
-		//calibrationProgress = (ProgressBar) view
-		//		.findViewById(R.id.progressBar1);
-
-		//phaseObject = new ParseObject("TestObject");
-		//phaseObject.put("foo", "bar");
-        calibrationFDD.saveFace(getCalibrationFace());
         startSession();
 		return view;
 	}
@@ -271,59 +256,42 @@ public class ZoomFragment extends FeatureDetection implements
 	}
 
 	@Override
-	public void onDetach() {
-		super.onDetach();
-	}
-
-
-	 // OpenCV Methods
-	@Override
-	public void onCameraViewStopped() {
-		super.onCameraViewStopped();
-	}
-
-	@Override
-	public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
-		// TODO Auto-generated method stub
-		super.onCameraFrame(inputFrame);
-		detectKalmanFaces();
-		return mRgba;
-	}
-
-	@Override
-	public void onFaceRecognized() {
+	public void onFaceRecognized(){
 		super.onFaceRecognized();
-        if(sampleReady) {
-            logUserData();
-        }
+		Log.d(TAG, "Face Found");
+		//lkgFace.saveFace(foundFace);
+		//faceList.add(lkgFace);
+		checkForZoomChange();
 	}
 
 	 // Session Methods
 	public void setupSession() {
 		Log.d(TAG, "New session setup...");
-        calibrationFDD.saveFace(0, 0);
+        //calibrationFDD.saveFace(0, 0);
 		// run the initialize face method
 		//checkInitialPhaseFace();
 	}
 
 	public void startSession() {
 		// if system has been initialized
-		if (sessionCheck()) {
+
+		//if (sessionCheck()) {
             for(int phase = 0; phase < totalPhases; phase++) {
                 Log.d(TAG, "Session Check Passed");
                 preInitPhase();
             }
-            endSession();
-		}
-		// if not
+            //endSession();
+		//}
+		/* if not
 		else {
+			calibrationFDD.saveFace(1);
 			// Setup
 			setupSession();
             startSession();
-		}
+		}*/
 	}
 
-	public boolean sessionCheck() {
+	/*public boolean sessionCheck() {
 		if (calibrationFDD.getFaceSize() > 0)
 			return true;
 		else if(calibrationFDD.getFaceSize() == 0) {
@@ -332,7 +300,7 @@ public class ZoomFragment extends FeatureDetection implements
         else {
             return false;
         }
-	}
+	}*/
 
     public void endSession(){
         // return to SV activity
@@ -457,7 +425,7 @@ public class ZoomFragment extends FeatureDetection implements
 
 	public void loadSample() {
 		// <------- assign entireFile to TextView
-		mContentView.setText(currentSample);
+		contentTextView.setText(currentSample);
 	}
 
 	/*
@@ -465,10 +433,10 @@ public class ZoomFragment extends FeatureDetection implements
 	 */
 	public void chooseInstruction() {
 		// see which level it fits into
-		int zoom = zoomStack.checkFaceLevel(calibrationFDD.getFaceSize());
-		Log.d(TAG, "Calibration Face: " + calibrationFDD.getFaceSize()
-				+ " fits in zoom " + zoom);
-		zoomStack.setMode(zoom);
+		int zoom = zoomController.checkFaceLevel(calibrationFace.getFaceSize());
+		//Log.d(TAG, "Calibration Face: " + calibrationFDD.getFaceSize()
+		//		+ " fits in zoom " + zoom);
+		zoomController.setMode(zoom);
 
 		// if face is in mid-level
 		switch (zoom) {
@@ -491,7 +459,7 @@ public class ZoomFragment extends FeatureDetection implements
 		default:
 			Log.d(TAG, "Instruction selection failed");
 			phaseIndex++;
-			endPhase();
+			//endPhase();
 			break;
 		}
 	}
@@ -501,23 +469,23 @@ public class ZoomFragment extends FeatureDetection implements
 			// Set the intended instruction
 			currentInstruction = decFont;
 			// Set the expected mode change
-			expectedLevel = zoomStack.getCurrentMode() - 1;
+			expectedLevel = zoomController.getCurrentMode() - 1;
 		} else if (index == 1) {
 			// Set the intended instruction
 			currentInstruction = incFont;
 			// Set the expected mode change
-			expectedLevel = zoomStack.getCurrentMode() + 1;
+			expectedLevel = zoomController.getCurrentMode() + 1;
 		} else {
 			Log.d(TAG, "Instruction set failed");
 		}
-		Log.d(TAG, "Current ZoomControl: " + zoomStack.getCurrentMode()
+		Log.d(TAG, "Current ZoomControl: " + zoomController.getCurrentMode()
 				+ " Expected ZoomControl: " + expectedLevel);
 
 	}
 
 	public void loadInstruction() {
 		//load content into view
-        mContentView.setText(currentInstruction);
+        contentTextView.setText(currentInstruction);
 	}
 
 	/*
@@ -554,19 +522,19 @@ public class ZoomFragment extends FeatureDetection implements
 		Message msg = zoomHandler.obtainMessage();
 		Message xmsg = toastHandler.obtainMessage();
 		// if the zoom level has changed
-		if (initZoom != zoomStack.getCurrentMode()) {
+		if (initZoom != zoomController.getCurrentMode()) {
 			zoomHandler.sendMessage(msg);
 			// Disable OpenCV View
-			this.getActivity().runOnUiThread(new Runnable() {
+			/*this.getActivity().runOnUiThread(new Runnable() {
 				@Override
 				public void run() {
 					mOpenCvCameraView.disableView();
 					mOpenCvCameraView.setVisibility(View.INVISIBLE);
 				}
-			});
+			});*/
 			// mOpenCvCameraView.setVisibility(View.INVISIBLE);
 			// Instruction Check
-			result = zoomInstructionCheck(zoomStack.getCurrentMode());
+			result = zoomInstructionCheck(zoomController.getCurrentMode());
 			// Put the result into parse
 			// phaseObject.put("result", result);
 			// Close out current phase
@@ -583,13 +551,13 @@ public class ZoomFragment extends FeatureDetection implements
 	public boolean zoomInstructionCheck(int recognizedLevel) {
 		boolean result;
 		// if currentFDD is greater than X from faceList-0
-		if (currentFDD.getFaceSize() > faceList.get(0).getFaceSize() + 10) {
+		if (lkgFace.getFaceSize() > faceList.get(0).getFaceSize() + 10) {
 			Message msg = zoomHandler.obtainMessage();
 			msg.arg1 = 1;
 			zoomHandler.sendMessage(msg);
 		}
 		// if currentFDD is less than X from faceList-0
-		else if (currentFDD.getFaceSize() > faceList.get(0).getFaceSize() - 10) {
+		else if (lkgFace.getFaceSize() > faceList.get(0).getFaceSize() - 10) {
 			Message msg = zoomHandler.obtainMessage();
 			msg.arg1 = 0;
 			zoomHandler.sendMessage(msg);
@@ -627,7 +595,7 @@ public class ZoomFragment extends FeatureDetection implements
 	 * Data Management
 	 */
 	public void checkInitialPhaseFace() {
-		if (calibrationFDD.getFaceSize() == -1) {
+		/*if (calibrationFDD.getFaceSize() == -1) {
 			// getInitialPhaseFace();
 
 			// new FaceFinder().execute(initialFDD);
@@ -637,7 +605,7 @@ public class ZoomFragment extends FeatureDetection implements
 			//
 			mInstrTextView.setText("Success");
 			startSession();
-		}
+		}*/
 	}
 
 	public void getInitialPhaseFace() {
@@ -648,7 +616,7 @@ public class ZoomFragment extends FeatureDetection implements
 			@Override
 			public void onTick(long millisUntilFinished) {
 				// TODO Auto-generated method stub
-				if (calibrationFDD.getFaceSize() == -1) {
+				if (calibrationFace.getFaceSize() == -1) {
 					Log.d(TAG, "Checking for face");
 					mInstrTextView.append(".");
 				} else {
@@ -669,13 +637,13 @@ public class ZoomFragment extends FeatureDetection implements
 
 	public void initializeFaceLevel() {
 		// if the system has not been initialized
-		if (calibrationFDD.getFaceSize() == -1) {
-			calibrationFDD = currentFDD;
+		/*if (calibrationFDD.getFaceSize() == -1) {
+			calibrationFDD = lkgFace;
 			try {
 				t.cancel();
 				// Disable OCV
 				// mOpenCvCameraView.disableView();
-				mOpenCvCameraView.setVisibility(View.INVISIBLE);
+				//mOpenCvCameraView.setVisibility(View.INVISIBLE);
 				initPhase();
 			} catch (Exception e) {
 				Log.d(TAG,
@@ -683,12 +651,12 @@ public class ZoomFragment extends FeatureDetection implements
 			}
 		} else {
 
-		}
+		}*/
 	}
 
 	public void handleState(int state) {
 		Context t = this.getActivity();
-		sActivity.handleState(this, state, t);
+		//sActivity.handleState(this, state, t);
 	}
 
 	private int calcAvgCalibFace() {
@@ -702,11 +670,11 @@ public class ZoomFragment extends FeatureDetection implements
 
 	public void manageCurrentFace() {
 		if (faceList.isEmpty()) {
-			faceList.add(currentFDD);
+			faceList.add(lkgFace);
 		}
 		// if currentFDD is less keep adding to list
 		else {
-			faceList.add(currentFDD);
+			faceList.add(lkgFace);
 			// if the displacement has changed greater than 10
 			// if (Math.abs(currentFDD.getFaceSize()
 			// - initialFDD.getFaceSize()) > 10){
@@ -718,7 +686,7 @@ public class ZoomFragment extends FeatureDetection implements
 
 	public void checkInstruction() {
 		// if expected zoom was made
-		if (zoomStack.getCurrentMode() == expectedLevel) {
+		if (zoomController.getCurrentMode() == expectedLevel) {
 			phaseResult = 1;
 		}
 		// if incorrect zoom was made
@@ -732,7 +700,7 @@ public class ZoomFragment extends FeatureDetection implements
 	 */
 	public void logUserData() {
         // get the averaging face size
-		double[] width = state.get(4, 0);
+		//double[] width = state.get(4, 0);
 
 		//currentFDD.saveFace((int) width[0], System.currentTimeMillis());
 		/*
@@ -741,12 +709,12 @@ public class ZoomFragment extends FeatureDetection implements
 		 */
 		switch (stage) {
 			case 0: // calibration view
-				if (calibrationFDD.getFaceSize() == -1)
+				if (calibrationFace.getFaceSize() == -1)
 					// If the instructions are visible
-					if (mContentTextView.getVisibility() == View.VISIBLE)
+					if (contentTextView.getVisibility() == View.VISIBLE)
 						// if the initialFace is empty
 						if (calibrationFaces.size() < 10) {
-							calibrationFaces.add(currentFDD);
+							calibrationFaces.add(lkgFace);
 							mHandler.post(new Runnable() {
 								public void run() {
 									calibrationProgress
@@ -755,7 +723,7 @@ public class ZoomFragment extends FeatureDetection implements
 							});
 						} else if (calibrationFaces.size() == 10) {
 							// Average calibration faces
-							calibrationFDD.saveFace(calcAvgCalibFace(),
+							calibrationFace.saveFace(calcAvgCalibFace(),
 									System.currentTimeMillis());
 							startSession();
 						}
@@ -766,7 +734,7 @@ public class ZoomFragment extends FeatureDetection implements
 			case 2:
 				if (mContentView.getVisibility() == View.VISIBLE) {
 					// Adjust Zoom Level
-					zoomStack.runZoomLevelCorrect(currentFDD.getFaceSize());
+					zoomController.runZoomLevelCorrect(lkgFace.getFaceSize());
 					// if faceList has not been initialized
 					manageCurrentFace();
 				}
@@ -800,14 +768,14 @@ public class ZoomFragment extends FeatureDetection implements
 	private static Handler zoomHandler = new Handler(Looper.getMainLooper()) {
 		public void handleMessage(Message msg) {
 			// Set Mode level
-			mContentView.setTextSize(zoomStack.getCurrentModeTextSize());
+			mContentView.setTextSize(zoomController.getCurrentModeTextSize());
 		}
 	};
 
 	private static Handler toastHandler = new Handler(Looper.myLooper()) {
 		public void handleMessage(Message msg) {
 			// Set Mode level
-			// zoomStack.setMode(msg.arg1);
+			// zoomController.setMode(msg.arg1);
 			// endPhase();
 		}
 	};
@@ -873,4 +841,7 @@ public class ZoomFragment extends FeatureDetection implements
 	};
 
 
+	public interface OnFaceFoundListener {
+		void onFaceRecognized();
+	}
 }
