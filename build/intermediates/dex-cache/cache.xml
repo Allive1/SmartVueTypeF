@@ -2,11 +2,74 @@
 <items version="2" >
 
     <item
-        jar="/Users/Omi/.gradle/caches/modules-2/files-2.1/com.parse/parse-android/1.13.0/58a7d54b6a4f28be11f0cecec93097eddf473e6f/parse-android-1.13.0.jar"
+        jar="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\classes-e2a969151fb69ad6b8c6298da0523a3d7e30aa2e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="076c7d9e22cc325b8008ff799e0c06dfb8eefdf3">
+        <dex dex="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\internal_impl-23.1.0-b510dd769f4c161b4f70cdccefdc5f1e4d30044c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.13.0\58a7d54b6a4f28be11f0cecec93097eddf473e6f\parse-android-1.13.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="58a7d54b6a4f28be11f0cecec93097eddf473e6f">
-        <dex dex="/Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/pre-dexed/flavor1/debug/parse-android-1.13.0-efc03cc64e1f91d59305f7e3d41813d1656bfbfa.jar" />
+        <dex dex="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\parse-android-1.13.0-623c637328ceb18cf0d39178cad6f3e682964b2a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\bolts-tasks-1.4.0-097798d7593f278274e6663544627b42a8892cb2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\support-annotations-23.1.1-a3128a73e46ad7780d0a5aac5069530020d9e6bb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\classes-3621d99a43f6e70912aeb357d102ac90668a1bb8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\bolts-applinks-1.4.0-17bb9463f150820b4a4a83d6aa6d59a0ffbb1125.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\internal_impl-23.1.1-8fa07332fe07d73bddd58bd20c16ac38c56a644f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\SmartVueTypeF\opencv\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f85c1c78ab87a473fc91a707bb78cbc492d0f91">
+        <dex dex="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\classes-b804fa4550be58397dd7a29473c82975275e7009.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1a57337a520bf40b9ad1e074cb780527dffa1aac">
+        <dex dex="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\classes-08b4d56a91ed8946352c00408b9638f4ff916f33.jar" />
     </item>
 
 </items>

@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/SmartVueTypeF.iml" filepath="$PROJECT_DIR$/SmartVueTypeF.iml" />
       <module fileurl="file://$PROJECT_DIR$/bolts-android-1.2.1/bolts-android-1.2.1.iml" filepath="$PROJECT_DIR$/bolts-android-1.2.1/bolts-android-1.2.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/opencv/opencv.iml" filepath="$PROJECT_DIR$/opencv/opencv.iml" />
-      <module fileurl="file://$PROJECT_DIR$/parse/parse.iml" filepath="$PROJECT_DIR$/parse/parse.iml" />
       <module fileurl="file://$PROJECT_DIR$/smartVueTypeF/smartVueTypeF.iml" filepath="$PROJECT_DIR$/smartVueTypeF/smartVueTypeF.iml" />
     </modules>
   </component>

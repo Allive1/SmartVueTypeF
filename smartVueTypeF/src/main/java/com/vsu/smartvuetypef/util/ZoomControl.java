@@ -1,6 +1,5 @@
 package main.java.com.vsu.smartvuetypef.util;
 
-import android.util.Log;
 import android.util.SparseArray;
 
 public class ZoomControl {
@@ -28,9 +27,9 @@ public class ZoomControl {
 
 	public void defaultZoom() {
 		clearModes();
-		addMode(290, 576, 7);
-		addMode(160, 289, 14);
-		addMode(0, 159, 28);
+		addMode(260, 576, 12);
+		addMode(180, 250, 20);
+		addMode(0, 170, 28);
 	}
 
 	public void addMode(int min, int max, int size) {
@@ -77,7 +76,7 @@ public class ZoomControl {
 						// Set mode to Level
 						currentMode = i;
 						modeChange = true;
-						Log.d(TAG, "ZoomControl Level Change to " + (i + 1));
+						//Log.d(TAG, "ZoomControl Level Change to " + (i + 1));
 						// Notify the parent activity of selected item
 						mCallback.onZoomChanged(currentMode);
 						break;
@@ -114,6 +113,6 @@ public class ZoomControl {
 
 	public interface OnZoomChangedListener {
 		// TODO: Update argument type and name
-		public void onZoomChanged(int index);
+		void onZoomChanged(int index);
 	}
 }

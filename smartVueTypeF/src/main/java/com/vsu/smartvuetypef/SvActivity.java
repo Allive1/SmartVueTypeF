@@ -1,13 +1,28 @@
 package main.java.com.vsu.smartvuetypef;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
+import android.widget.Toast;
+
+import org.opencv.android.BaseLoaderCallback;
+import org.opencv.android.CameraBridgeViewBase;
+import org.opencv.android.LoaderCallbackInterface;
+import org.opencv.android.OpenCVLoader;
+import org.opencv.core.Mat;
+import org.opencv.objdetect.CascadeClassifier;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
 
 import main.java.com.vsu.smartvuetypef.features.FlipFragment;
 import main.java.com.vsu.smartvuetypef.features.ZoomFragment;
@@ -15,13 +30,8 @@ import main.java.com.vsu.smartvuetypef.model.FeatureDetection;
 import main.java.com.vsu.smartvuetypef.model.MyKalmanFilter;
 import main.java.com.vsu.smartvuetypef.view.InstructionsFragment;
 
-import android.view.WindowManager;
-import android.widget.Toast;
 
-import org.opencv.core.Mat;
-
-
-public class SvActivity extends FragmentActivity implements InstructionsFragment.OnInstructionCompletedListener{
+public class SvActivity extends FeatureDetection implements InstructionsFragment.OnInstructionCompletedListener{
 	private static final String TAG = "SvActivity";
 
 	int random;
@@ -36,18 +46,16 @@ public class SvActivity extends FragmentActivity implements InstructionsFragment
     public static FeatureDetection faceDetector;
     private MyKalmanFilter KF = null;
     int iscene = 0, f = 0;
-    //ZoomFragment.OnZoomChanged mZoomCallback;
+	OnFaceRecognizedListener mFeatureCallback;
+	ArrayList <Integer> faceQueue = new ArrayList<>();
+	int faceIndex = 0, calibrate_face = 0;
 
 	// A static block that sets class fields
 	static {
 		// Creates a single static instance of PhotoManager
 		sInstance = new SvActivity();
+
 	}
-
-    private Mat mGray;
-    private Mat mRgba;
-    private Mat state, measurement;
-
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -55,9 +63,77 @@ public class SvActivity extends FragmentActivity implements InstructionsFragment
 		setContentView(R.layout.activity_main);
         this.getWindow()
                 .addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		faceQueue.ensureCapacity(5);
+		mLoaderCallback = new BaseLoaderCallback(
+				this) {
+			@Override
+			public void onManagerConnected(int status) {
+				System.out.println("OpenCV Loaded: " + status);
+				switch (status) {
+					case LoaderCallbackInterface.SUCCESS: {
+						Log.i(TAG, "OpenCV loaded successfully");
+
+						try {
+							File mCascadeFile;
+							InputStream is = getResources().openRawResource(
+									R.raw.lbpcascade_frontalface);
+
+							File cascadeDir = getDir("cascade",
+									Context.MODE_PRIVATE);
+							mCascadeFile = new File(cascadeDir,
+									"lbpcascade_frontalface.xml");
+							FileOutputStream os = new FileOutputStream(mCascadeFile);
+
+							byte[] buffer = new byte[4096];
+							int bytesRead;
+							while ((bytesRead = is.read(buffer)) != -1) {
+								os.write(buffer, 0, bytesRead);
+							}
+
+							cascadeProfileFace = new CascadeClassifier(
+									mCascadeFile.getAbsolutePath());
+							if (cascadeProfileFace.empty()) {
+								Log.e(TAG,
+										"Failed to load frontal face cascade classifier");
+								cascadeProfileFace = null;
+							} else {
+								Log.i(TAG, "Loaded cascade classifier from "
+										+ mCascadeFile.getAbsolutePath());
+							}
+							is.close();
+							os.close();
+							System.out.println("OpenCV Loaded");
+							cascadeDir.delete();
+							mRgba = new Mat(576, 720, 24);
+							mGray = new Mat(576, 720, 24);
+						} catch (IOException e) {
+							e.printStackTrace();
+							Log.e(TAG, "Failed to load cascade. Exception thrown: " + e);
+						}
+						// mOpenCvCameraView.enableFpsMeter();
+						mOpenCvCameraView.setCameraIndex(0);
+						mOpenCvCameraView.enableView();
+					}
+					break;
+					default: {
+						super.onManagerConnected(status);
+					}
+					break;
+				}
+			}
+		};
+
+		// Initialize OpenCV Camera View
+		mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.opencv_view);
+		mOpenCvCameraView.setCvCameraViewListener(this);
 
 		if (savedInstanceState == null) {
 			instruct = new InstructionsFragment();
+			/*Bundle args = new Bundle();
+
+			args.put("FeatureDetector", face);
+			args.putString(ARG_PARAM2, param2);
+			fragment.setArguments(args);*/
 			//fragment = new ZoomFragment();
 			manager = getSupportFragmentManager();
 			transaction = manager.beginTransaction();
@@ -123,48 +199,14 @@ public class SvActivity extends FragmentActivity implements InstructionsFragment
 		outState.putDouble("caliFace", mCalibrationFace);
 	}
 
-	public void onReadyClick(int i) {
-        //mCalibrationFace = faceAvg;
-		switch (i) {
-		case 0:
-			//if(faceAvg==0)
-				fragment = new ZoomFragment();
-			//else
-			//	zoomFragment = ZoomFragment.newInstance(faceAvg);
-			transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.content_fragment, fragment);
-            transaction.addToBackStack("Zoom");
-			transaction.commit();
-
-			break;
-		case 1:
-			Log.d(TAG, "Flip Case");
-			/*FlipFragment flipFragment = new FlipFragment();		
-			transaction = getSupportFragmentManager().beginTransaction();
-			transaction.replace(R.id.pager, flipFragment);
-			transaction.addToBackStack("Flip");
-			setContentView(R.layout.fd_screen_slide);*/
-
-			//startActivity(new Intent(SvActivity.this, mSample.activityClass));
-
-			// Commit the transaction
-			//transaction.commit();
-			break;
-		case 2:
-			Log.d(TAG, "Scroll Case");
-			//ScrollFragment scrollFragment = new ScrollFragment();
-			/*setContentView(R.layout.feature_view);
-			transaction = getSupportFragmentManager().beginTransaction();
-			transaction.replace(R.id.content_fragment, scrollFragment);
-			transaction.addToBackStack("Scroll");
-			// Commit the transaction
-			transaction.commit();*/
-			break;
-		default:
-			Log.d(TAG, "Default Case");
-			break;
-		}
+	@Override
+	public void onResume() {
+		super.onResume();
+		OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_3,
+				this, mLoaderCallback);
 	}
+
+
 
 	public static SvActivity getInstance() {
 		return sInstance;
@@ -175,12 +217,31 @@ public class SvActivity extends FragmentActivity implements InstructionsFragment
         switch (f) {
             case 0:
                 Log.d(TAG, "ZoomControl Case");
-                fragment = new ZoomFragment();
-                transaction = manager.beginTransaction();
-                transaction.replace(R.id.content_fragment, fragment);
-                transaction.addToBackStack("ZoomControl");
-                // Commit the transaction
-                transaction.commit();
+				try {
+
+					if(faceIndex<0) {
+						for (int i = 0; i <= faceIndex; i++) {
+							calibrate_face += faceQueue.get(i);
+						}
+						calibrate_face = calibrate_face / (faceIndex + 1);
+					}else {
+						calibrate_face = 0;
+					}
+					fragment = new ZoomFragment();
+					Bundle args = new Bundle();
+					args.putInt("calibration_face", calibrate_face);
+					fragment.setArguments(args);
+
+                	transaction = manager.beginTransaction();
+                	transaction.replace(R.id.content_fragment, fragment);
+                	transaction.addToBackStack("ZoomControl");
+                	// Commit the transaction
+                	transaction.commit();
+					mFeatureCallback = (OnFaceRecognizedListener) fragment;
+				} catch (ClassCastException e) {
+					throw new ClassCastException(fragment.getContext().toString()
+							+ " must implement OnHeadlineSelectedListener");
+				}
                 break;
             case 1:
                 Log.d(TAG, "Flip Case");
@@ -200,7 +261,23 @@ public class SvActivity extends FragmentActivity implements InstructionsFragment
         }
     }
 
-    public interface OnFragmentInteractionListener {
-        void onClick();
-    }
+	@Override
+	public void onFaceRecognized(){
+		super.onFaceRecognized();
+
+		faceQueue.set(faceIndex, foundFace);
+		faceIndex++;
+		//Log.d(TAG, "Face Found: " + foundFace);
+		if(mFeatureCallback!=null)
+			mFeatureCallback.checkForZoomChange(foundFace);
+		else{
+			faceQueue.add(foundFace);
+		}
+
+
+	}
+
+	public interface OnFaceRecognizedListener {
+		void checkForZoomChange(int face);
+	}
 }

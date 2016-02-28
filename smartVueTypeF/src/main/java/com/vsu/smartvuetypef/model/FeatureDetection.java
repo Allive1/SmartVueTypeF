@@ -1,6 +1,7 @@
 package main.java.com.vsu.smartvuetypef.model;
 
-import java.util.Vector;
+import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
@@ -14,19 +15,17 @@ import org.opencv.core.Point;
 import org.opencv.core.Rect;
 import org.opencv.core.Scalar;
 import org.opencv.core.Size;
-import org.opencv.core.TermCriteria;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.ml.CvSVM;
 import org.opencv.ml.CvSVMParams;
 import org.opencv.objdetect.CascadeClassifier;
 import org.opencv.objdetect.Objdetect;
 
-;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.Fragment;
-import android.util.Log;
+import java.util.Vector;
 
-public class FeatureDetection extends Fragment implements CvCameraViewListener2 {
+;
+
+public class FeatureDetection extends FragmentActivity implements CvCameraViewListener2 {
 	private static final String TAG = "FeatureDetection";
 
 	private static final Scalar FACE_RECT_COLOR = new Scalar(0, 255, 0, 255);
@@ -50,7 +49,7 @@ public class FeatureDetection extends Fragment implements CvCameraViewListener2 
 	private float mRelativeFaceSize;
 	private int notFoundCount, mAbsoluteFaceSize, frameSize;// train_files = 5;
 
-	protected static CameraBridgeViewBase mOpenCvCameraView;
+	public static CameraBridgeViewBase mOpenCvCameraView;
 
 	protected CascadeClassifier cascadeProfileFace;
 	protected BaseLoaderCallback mLoaderCallback;

@@ -30,7 +30,7 @@
             <include
                 android:id="@+id/phase_frag"
                 android:layout_width="match_parent"
-                android:layout_height="766dp"
+                android:layout_height="match_parent"
                 layout="@layout/phase_page"
                 android:textAlignment="center" />
 
@@ -46,4 +46,4 @@
     </FrameLayout>
 
 
-</LinearLayout><!-- From: file:/Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/res/layout/instructions_transition.xml -->
+</LinearLayout><!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/src/main/res/layout/instructions_transition.xml -->

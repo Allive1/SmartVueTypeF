@@ -9,28 +9,26 @@ model {
             applicationId = "com.vsu.smartvuetypef"
             minSdkVersion.apiLevel = 19
             targetSdkVersion.apiLevel = 19
-
         }
-
     }
 
-        android.ndk {
+    android.ndk {
             moduleName = "smartvue"
             CFlags += "-DANDROID_NDK"
             ldLibs += ["android","opencv2", "log"]
             cppFlags  += "-I${file("src/main/jni/prebuilts/include")}".toString()
-        }
+    }
 
-        android.buildTypes {
+    android.buildTypes {
             release {
                 minifyEnabled = false
                 proguardFiles += file('proguard-android.pro')
             }
-        }
+    }
 
     android.productFlavors {
         create("flavor1") {
-            applicationId = "com.app"
+            applicationId = "com.smartvue"
         }
     }
 

@@ -1,94 +1,98 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:2:1-42:12
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:2:1-42:12
 	xmlns:android
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:2:11-69
 	package
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:3:5-46
-		INJECTED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml
-		INJECTED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:5:5-30
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:5:5-30
 	android:versionCode
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:4:5-28
-		INJECTED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml
-		INJECTED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:7:5-9:41
-MERGED from [SmartVueTypeF:opencv:unspecified] /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/SmartVueTypeF/opencv/unspecified/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:23.1.0] /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v13:23.1.0] /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/support-v13/23.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:23.1.0] /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:20:5-43
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [SmartVueTypeF:opencv:unspecified] C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\SmartVueTypeF\opencv\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v13:23.1.0] C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:9:9-38
-		INJECTED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml
-		INJECTED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:8:9-35
-		INJECTED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml
-		INJECTED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml
 uses-permission#android.permission.CAMERA
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:10:5-64
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:10:5-64
 	android:name
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:10:22-62
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:10:22-62
 uses-feature#android.hardware.camera
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:11:5-60
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:11:5-60
 	android:name
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:11:19-57
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:11:19-57
 uses-feature#android.hardware.camera.front
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:12:2-62
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:12:2-62
 	android:name
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:12:16-60
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:12:16-60
 application
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:13:5-41:19
-MERGED from [com.android.support:support-v4:23.1.0] /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v13:23.1.0] /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/support-v13/23.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.0] /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:13:5-41:19
+MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v13:23.1.0] C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:16:9-41
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:16:9-41
 	android:allowBackup
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:14:9-35
 	android:icon
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:15:9-45
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:15:9-45
 	android:theme
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:17:9-50
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:17:9-50
 activity#main.java.com.vsu.smartvuetypef.SplashScreen
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:20:9-28:20
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:20:9-28:20
 	android:screenOrientation
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:23:13-49
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:23:13-49
 	android:label
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:22:13-45
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:22:13-45
 	android:name
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:21:13-41
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:21:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:24:13-27:29
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:24:13-27:29
 action#android.intent.action.MAIN
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:25:17-69
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:26:17-77
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:26:27-74
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:26:27-74
 activity#main.java.com.vsu.smartvuetypef.SvActivity
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:30:9-33:11
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:30:9-33:11
 	android:label
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:32:13-45
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:32:13-45
 	android:name
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:31:13-39
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:31:13-39
 activity#main.java.com.vsu.smartvuetypef.ScreenSlideActivity
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:34:9-40:20
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:34:9-40:20
 	android:label
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:35:13-55
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:35:13-55
 	android:uiOptions
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:37:13-57
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:37:13-57
 	android:parentActivityName
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:36:13-55
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:36:13-55
 	android:name
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:34:19-54
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:34:19-54
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:38:13-39:49
+ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:38:13-39:49
 	android:name
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:38:24-70
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:38:24-70
 	android:value
-		ADDED from /Users/Omi/AndroidStudioProjects/SmartVueTypeF/smartVueTypeF/src/main/AndroidManifest.xml:39:17-46
+		ADDED from C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\src\main\AndroidManifest.xml:39:17-46
