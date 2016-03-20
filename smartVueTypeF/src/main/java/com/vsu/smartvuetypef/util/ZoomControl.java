@@ -27,9 +27,9 @@ public class ZoomControl {
 
 	public void defaultZoom() {
 		clearModes();
-		addMode(260, 576, 12);
+		addMode(280, 576, 12);
 		addMode(180, 250, 20);
-		addMode(0, 170, 28);
+		addMode(0, 150, 28);
 	}
 
 	public void addMode(int min, int max, int size) {
@@ -86,14 +86,22 @@ public class ZoomControl {
 	}
 
 	public int checkFaceLevel(int faceDimension) {
-		for (int i = 0; i < maxModes; i++) {
-			if (faceDimension <= zoomModes.get(i).max_face
-					&& faceDimension >= zoomModes.get(i).min_face) {
-				return i;
-
-			}
+		//Outside of scope
+		if(faceDimension < 0 && faceDimension > 576){
+			return -1;
 		}
-		return -1;
+		//Within scope
+		else{
+			for (int i = 0; i < maxModes; i++) {
+				//if its in zoom mode
+				if (faceDimension <= zoomModes.get(i).max_face
+						&& faceDimension >= zoomModes.get(i).min_face) {
+					return i;
+				}
+			}
+			//if its in free space
+			return 1;
+		}
 	}
 
 	private class Mode {

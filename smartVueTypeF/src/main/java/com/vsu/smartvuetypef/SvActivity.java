@@ -264,17 +264,22 @@ public class SvActivity extends FeatureDetection implements InstructionsFragment
 	@Override
 	public void onFaceRecognized(){
 		super.onFaceRecognized();
-
-		faceQueue.set(faceIndex, foundFace);
-		faceIndex++;
+		if(faceQueue.size()==5) {
+			faceQueue.set(faceIndex, foundFace);
+		}
+		else
+			faceQueue.add(foundFace);
+		//Log.d(TAG, "Face Index: " + faceIndex);
+		if(faceIndex==4)
+			faceIndex=0;
+		else
+			faceIndex++;
 		//Log.d(TAG, "Face Found: " + foundFace);
 		if(mFeatureCallback!=null)
 			mFeatureCallback.checkForZoomChange(foundFace);
 		else{
 			faceQueue.add(foundFace);
 		}
-
-
 	}
 
 	public interface OnFaceRecognizedListener {
