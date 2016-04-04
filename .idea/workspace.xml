@@ -20,44 +20,272 @@
       <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\.idea\libraries\support_annotations_23_1_1.xml" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\.idea\libraries\support_v13_23_1_0.xml" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\.idea\libraries\support_v4_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\features\ZoomFragment$6$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\features\ZoomFragment$6.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/SvActivity.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/SvActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/util/ZoomControl$Mode.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/util/ZoomControl$Mode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/util/ZoomControl.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/util/ZoomControl.class" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\generated\source\aidl\debug\org\opencv\engine\OpenCVEngineInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\generated\source\buildConfig\androidTest\debug\org\opencv\test\BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\generated\source\buildConfig\debug\org\opencv\BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\generated\source\r\androidTest\debug\org\opencv\R.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\generated\source\r\androidTest\debug\org\opencv\test\R.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\generated\source\r\debug\org\opencv\R.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\bundles\debug\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\bundles\debug\R.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\bundles\debug\aapt\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\bundles\debug\classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\bundles\debug\res\values\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\androidTest\debug\org\opencv\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\androidTest\debug\org\opencv\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\androidTest\debug\org\opencv\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\androidTest\debug\org\opencv\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\androidTest\debug\org\opencv\test\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\androidTest\debug\org\opencv\test\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\androidTest\debug\org\opencv\test\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\androidTest\debug\org\opencv\test\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\androidTest\debug\org\opencv\test\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\AsyncServiceHelper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\AsyncServiceHelper$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\AsyncServiceHelper$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\AsyncServiceHelper$3$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\AsyncServiceHelper$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\AsyncServiceHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\BaseLoaderCallback$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\BaseLoaderCallback$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\BaseLoaderCallback$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\BaseLoaderCallback$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\BaseLoaderCallback$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\BaseLoaderCallback$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\BaseLoaderCallback$7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\BaseLoaderCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\CameraBridgeViewBase$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\CameraBridgeViewBase$CvCameraViewFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\CameraBridgeViewBase$CvCameraViewListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\CameraBridgeViewBase$CvCameraViewListener2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\CameraBridgeViewBase$CvCameraViewListenerAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\CameraBridgeViewBase$ListItemAccessor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\CameraBridgeViewBase.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\FpsMeter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\InstallCallbackInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\JavaCameraView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\JavaCameraView$CameraWorker.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\JavaCameraView$JavaCameraFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\JavaCameraView$JavaCameraSizeAccessor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\JavaCameraView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\LoaderCallbackInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\NativeCameraView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\NativeCameraView$CameraWorker.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\NativeCameraView$NativeCameraFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\NativeCameraView$OpenCvSizeAccessor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\NativeCameraView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\OpenCVLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\StaticHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\android\Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\calib3d\Calib3d.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\calib3d\StereoBM.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\calib3d\StereoSGBM.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\contrib\Contrib.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\contrib\FaceRecognizer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\contrib\StereoVar.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\Algorithm.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\Core$MinMaxLocResult.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\Core.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\CvException.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\CvType.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\Mat.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfByte.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfDMatch.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfDouble.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfFloat.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfFloat4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfFloat6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfInt.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfInt4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfKeyPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfPoint2f.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfPoint3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfPoint3f.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\MatOfRect.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\Point.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\Point3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\Range.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\Rect.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\RotatedRect.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\Scalar.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\Size.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\core\TermCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\engine\OpenCVEngineInterface$Stub$Proxy.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\engine\OpenCVEngineInterface$Stub.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\engine\OpenCVEngineInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\features2d\DMatch.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\features2d\DescriptorExtractor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\features2d\DescriptorMatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\features2d\FeatureDetector.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\features2d\Features2d.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\features2d\GenericDescriptorMatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\features2d\KeyPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\gpu\DeviceInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\gpu\Gpu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\gpu\TargetArchs.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\highgui\Highgui.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\highgui\VideoCapture.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\imgproc\CLAHE.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\imgproc\Imgproc.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\imgproc\Moments.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\imgproc\Subdiv2D.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvANN_MLP.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvANN_MLP_TrainParams.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvBoost.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvBoostParams.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvDTree.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvDTreeParams.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvERTrees.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvGBTrees.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvGBTreesParams.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvKNearest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvNormalBayesClassifier.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvParamGrid.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvRTParams.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvRTrees.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvSVM.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvSVMParams.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\CvStatModel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\EM.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\ml\Ml.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\objdetect\CascadeClassifier.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\objdetect\HOGDescriptor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\objdetect\Objdetect.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\photo\Photo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\utils\Converters.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\video\BackgroundSubtractor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\video\BackgroundSubtractorMOG.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\video\BackgroundSubtractorMOG2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\video\KalmanFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\classes\debug\org\opencv\video\Video.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\incremental\aidl\androidTest\debug\dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\incremental\aidl\debug\dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\incremental\mergeAssets\androidTest\debug\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\incremental\mergeAssets\debug\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\incremental\mergeResourcesandroidTest\debug\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\incremental\packageResourcesdebug\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\manifest\androidTest\debug\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\res\merged\androidTest\debug\values\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\res\resources-debug-androidTest.ap_" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\intermediates\symbols\androidTest\debug\R.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\outputs\aar\opencv-debug.aar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\opencv\build\tmp\packageDebugJar\MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\binaries\debug\flavor1\lib\mips64\gdb.setup" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\binaries\debug\flavor1\lib\mips64\gdbserver" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\binaries\debug\flavor1\lib\mips\gdb.setup" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\binaries\debug\flavor1\lib\mips\gdbserver" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\binaries\debug\flavor1\lib\x86\gdb.setup" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\binaries\debug\flavor1\lib\x86\gdbserver" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\binaries\debug\flavor1\lib\x86_64\gdb.setup" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\binaries\debug\flavor1\lib\x86_64\gdbserver" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\androidTest\flavor1\debug\com\smartvue\test\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\android\support\v7\appcompat\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$raw.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\Zoom$Mode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\Zoom.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\features\ZoomFragment$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\features\ZoomFragment$4$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\features\ZoomFragment$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\features\ZoomFragment$5$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\features\ZoomFragment$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\model\ParseFace.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\model\Phase$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\model\Phase$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\model\Phase$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\model\Phase$PhaseFindCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\model\Phase.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\model\Session$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\model\Session.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\util\Face.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\util\FaceFinder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\util\FrameManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\util\FrameManager.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\util\FrameTask.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\util\FrameTransposeRunnable$TaskRunnableTransposeMethods.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\util\FrameTransposeRunnable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\view\FaceView$FaceListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\view\FaceView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\view\FlipPage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\main\java\com\vsu\smartvuetypef\view\ScreenSlidePageFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\classes\flavor1\debug\org\opencv\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\dex\flavor1\debug\classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\bolts-applinks-1.4.0-17bb9463f150820b4a4a83d6aa6d59a0ffbb1125.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\bolts-tasks-1.4.0-097798d7593f278274e6663544627b42a8892cb2.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\classes-08b4d56a91ed8946352c00408b9638f4ff916f33.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\classes-3621d99a43f6e70912aeb357d102ac90668a1bb8.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\classes-b804fa4550be58397dd7a29473c82975275e7009.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\classes-e2a969151fb69ad6b8c6298da0523a3d7e30aa2e.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\internal_impl-23.1.0-b510dd769f4c161b4f70cdccefdc5f1e4d30044c.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\internal_impl-23.1.1-8fa07332fe07d73bddd58bd20c16ac38c56a644f.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\parse-android-1.13.0-623c637328ceb18cf0d39178cad6f3e682964b2a.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\support-annotations-23.1.1-a3128a73e46ad7780d0a5aac5069530020d9e6bb.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\outputs\apk\smartVueTypeF-flavor1-debug-unaligned.apk" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Omari\Documents\GitHub\SmartVueTypeF\smartVueTypeF\build\outputs\apk\smartVueTypeF-flavor1-debug.apk" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$1$1.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$1$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$1$2.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$1$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$1.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$2.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$3.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$4.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$5$1.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$5$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$5.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$ToastHandler.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$ToastHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment.class" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/dex/flavor1/debug/classes.dex" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/dex/flavor1/debug/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/opencv/build/intermediates/bundles/release/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/exploded-aar/SmartVueTypeF/opencv/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/exploded-aar/SmartVueTypeF/opencv/unspecified/jars/classes.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/arm64-v8a/gdbserver" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/arm64-v8a/gdbserver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/armeabi/gdbserver" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/armeabi/gdbserver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/armeabi-v7a/gdbserver" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/armeabi-v7a/gdbserver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/mips/gdbserver" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/mips/gdbserver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/mips64/gdbserver" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/mips64/gdbserver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/x86/gdbserver" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/x86/gdbserver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/x86_64/gdbserver" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/x86_64/gdbserver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/outputs/apk/smartVueTypeF-flavor1-debug-unaligned.apk" afterPath="$PROJECT_DIR$/smartVueTypeF/build/outputs/apk/smartVueTypeF-flavor1-debug-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/outputs/apk/smartVueTypeF-flavor1-debug.apk" afterPath="$PROJECT_DIR$/smartVueTypeF/build/outputs/apk/smartVueTypeF-flavor1-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/outputs/aar/opencv-release.aar" afterPath="$PROJECT_DIR$/opencv/build/outputs/aar/opencv-release.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/resources-flavor1-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/resources-flavor1-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/resources-flavor1-debug.ap_" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/resources-flavor1-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/SvActivity.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/SvActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/ZoomControl.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/ZoomControl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ZoomFragment.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ZoomFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/arm64-v8a/gdb.setup" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/arm64-v8a/gdb.setup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/armeabi/gdb.setup" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/armeabi/gdb.setup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/armeabi-v7a/gdb.setup" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/armeabi-v7a/gdb.setup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/mips/gdb.setup" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/mips/gdb.setup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/mips64/gdb.setup" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/mips64/gdb.setup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/x86/gdb.setup" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/x86/gdb.setup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/x86_64/gdb.setup" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/x86_64/gdb.setup" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/incremental/mergeResourcesflavor1/debug/merger.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/incremental/mergeResourcesflavor1/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/smartVueTypeF.iml" afterPath="$PROJECT_DIR$/smartVueTypeF/smartVueTypeF.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SmartVueTypeF.iws" />
@@ -92,64 +320,81 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="278" column="0" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <element signature="initializer##0;class#SvActivity#0" expanded="false" />
                 <element signature="method#onCreateOptionsMenu#0;class#SvActivity#0" expanded="false" />
                 <element signature="method#onOptionsItemSelected#0;class#SvActivity#0" expanded="false" />
                 <element signature="method#onSaveInstanceState#0;class#SvActivity#0" expanded="false" />
+                <element signature="e#6346#6347#0" expanded="false" />
+                <element signature="e#6369#6370#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZoomFragment.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZoomFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ZoomFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3629764">
-              <caret line="400" column="34" selection-start-line="400" selection-start-column="34" selection-end-line="400" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
               <folding>
-                <element signature="method#ZoomFragment#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#onAttach#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="method#onStart#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#onCreateView#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#setupSession#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="e#4336#4368#0" expanded="false" />
+                <element signature="e#4492#4524#0" expanded="false" />
                 <element signature="method#startSession#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="e#4494#4527#0" expanded="false" />
-                <element signature="e#4715#4730#0" expanded="false" />
+                <element signature="e#4650#4683#0" expanded="false" />
+                <element signature="e#4871#4886#0" expanded="false" />
                 <element signature="method#endSession#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#preInitPhase#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#initPhase#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#loadPhase#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="class#5938:6417" expanded="false" />
-                <element signature="method#onAnimationStart#0;class#5938:6417" expanded="false" />
-                <element signature="method#onAnimationEnd#0;class#5938:6417" expanded="false" />
-                <element signature="class#6463:7012" expanded="false" />
-                <element signature="method#onAnimationStart#0;class#6463:7012" expanded="false" />
+                <element signature="e#5577#7323#0" expanded="true" />
+                <element signature="method#onAnimationEnd#0;class#6110:6589" expanded="false" />
+                <element signature="class#6635:7184" expanded="false" />
+                <element signature="method#onAnimationStart#0;class#6635:7184" expanded="false" />
+                <element signature="e#7322#7323#0" expanded="true" />
                 <element signature="method#endPhase#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="method#chooseSample#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="e#8742#8761#0" expanded="false" />
-                <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="method#chooseInstruction#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="method#setInstruction#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#loadInstruction#0;class#ZoomFragment#0" expanded="false" />
+                <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#loadInstructionView#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#loadSampleView#0;class#ZoomFragment#0" expanded="false" />
+                <element signature="method#checkForZoomChange#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#zoomInstructionCheck#0;class#ZoomFragment#0" expanded="false" />
+                <element signature="method#onZoomChanged#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#checkInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#getInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="class#14744:15420" expanded="false" />
-                <element signature="method#onTick#0;class#14744:15420" expanded="false" />
-                <element signature="e#15200#15227#0" expanded="false" />
+                <element signature="class#11667:12343" expanded="false" />
+                <element signature="method#onTick#0;class#11667:12343" expanded="false" />
+                <element signature="e#12123#12150#0" expanded="false" />
                 <element signature="method#initializeFaceLevel#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#handleState#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#manageCurrentFace#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="e#16274#16324#0" expanded="false" />
+                <element signature="e#13197#13247#0" expanded="false" />
                 <element signature="method#checkInstruction#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="class#16850:17068" expanded="false" />
-                <element signature="class#17646:18508" expanded="false" />
-                <element signature="class#18862:19210" expanded="false" />
-                <element signature="method#onAnimationStart#0;class#18862:19210" expanded="false" />
-                <element signature="method#onAnimationEnd#0;class#18862:19210" expanded="false" />
+                <element signature="class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
+                <element signature="class#ToastHandler#0;class#ZoomFragment#0" expanded="false" />
+                <element signature="class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
+                <element signature="e#15158#15432#0" expanded="true" />
+                <element signature="e#15431#15432#0" expanded="true" />
+                <element signature="class#SampleHandler#0;class#ZoomFragment#0" expanded="false" />
+                <element signature="method#onAnimationStart#0;class#15838:16186" expanded="false" />
+                <element signature="method#onAnimationEnd#0;class#15838:16186" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Session.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.47803164">
+              <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#chooseSample#0;class#Session#0" expanded="false" />
+                <element signature="e#1661#1680#0" expanded="false" />
+                <element signature="method#setInstruction#0;class#Session#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -158,11 +403,19 @@
       <file leaf-file-name="ZoomControl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/ZoomControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0370371">
+            <state vertical-scroll-proportion="0.0">
               <caret line="90" column="21" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
               <folding>
                 <element signature="method#ZoomControl#0;class#ZoomControl#0" expanded="false" />
                 <element signature="method#addMode#0;class#ZoomControl#0" expanded="false" />
+                <element signature="e#1097#1098#0" expanded="false" />
+                <element signature="e#1123#1124#0" expanded="false" />
+                <element signature="e#1155#1156#0" expanded="false" />
+                <element signature="e#1180#1181#0" expanded="false" />
+                <element signature="e#1209#1210#0" expanded="false" />
+                <element signature="e#1233#1234#0" expanded="false" />
+                <element signature="e#1273#1274#0" expanded="false" />
+                <element signature="e#1322#1323#0" expanded="false" />
                 <element signature="method#checkCurrentZoomLevel#0;class#ZoomControl#0" expanded="false" />
                 <element signature="method#runZoomLevelCorrect#0;class#ZoomControl#0" expanded="false" />
                 <element signature="class#Mode#0;class#ZoomControl#0" expanded="false" />
@@ -180,7 +433,6 @@
               <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="false" />
-                <element signature="e#1473#1479#0" expanded="false" />
                 <element signature="method#detectFaces#0;class#FeatureDetection#0" expanded="false" />
                 <element signature="e#2422#2443#0" expanded="false" />
                 <element signature="method#detectKalmanFaces#0;class#FeatureDetection#0" expanded="false" />
@@ -219,6 +471,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -3665,6 +3924,7 @@
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/SvActivity.java" />
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/ZoomControl.java" />
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ZoomFragment.java" />
+        <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Session.java" />
       </list>
     </option>
   </component>
@@ -3710,8 +3970,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3910,6 +4168,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -3954,15 +4215,14 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/StudioProjects" />
     <property name="recentsLimit" value="5" />
-    <property name="android.project.structure.last.selected" value="opencv" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="015d4906df08061a" />
@@ -4142,18 +4402,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="2" width="1932" height="1045" extended-state="1" />
+    <frame x="-7" y="2" width="1932" height="1045" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.47654584" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3277027" sideWeight="0.47435898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34797296" sideWeight="0.44818377" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3277027" sideWeight="0.525641" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34797296" sideWeight="0.5518162" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3445946" sideWeight="0.5432692" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -4190,26 +4450,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/res/layout/feature_view.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="18" selection-start-line="9" selection-start-column="4" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Face.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4220,6 +4469,14 @@
           <folding>
             <element signature="method#ZoomControl#0;class#ZoomControl#0" expanded="false" />
             <element signature="method#addMode#0;class#ZoomControl#0" expanded="false" />
+            <element signature="e#1097#1098#0" expanded="false" />
+            <element signature="e#1123#1124#0" expanded="false" />
+            <element signature="e#1155#1156#0" expanded="false" />
+            <element signature="e#1180#1181#0" expanded="false" />
+            <element signature="e#1209#1210#0" expanded="false" />
+            <element signature="e#1233#1234#0" expanded="false" />
+            <element signature="e#1273#1274#0" expanded="false" />
+            <element signature="e#1322#1323#0" expanded="false" />
             <element signature="method#checkCurrentZoomLevel#0;class#ZoomControl#0" expanded="false" />
             <element signature="method#runZoomLevelCorrect#0;class#ZoomControl#0" expanded="false" />
             <element signature="class#Mode#0;class#ZoomControl#0" expanded="false" />
@@ -4235,7 +4492,6 @@
           <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1473#1479#0" expanded="false" />
             <element signature="method#detectFaces#0;class#FeatureDetection#0" expanded="false" />
             <element signature="e#2422#2443#0" expanded="false" />
             <element signature="method#detectKalmanFaces#0;class#FeatureDetection#0" expanded="false" />
@@ -4277,10 +4533,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="initializer##0;class#SvActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#SvActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#SvActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#SvActivity#0" expanded="false" />
+            <element signature="e#6346#6347#0" expanded="false" />
+            <element signature="e#6369#6370#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4307,49 +4566,48 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="411" column="38" selection-start-line="411" selection-start-column="38" selection-end-line="411" selection-end-column="38" />
           <folding>
-            <element signature="method#ZoomFragment#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#onAttach#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#onStart#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#onCreateView#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#setupSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#4336#4368#0" expanded="false" />
+            <element signature="e#4492#4524#0" expanded="false" />
             <element signature="method#startSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#4494#4527#0" expanded="false" />
-            <element signature="e#4715#4730#0" expanded="false" />
+            <element signature="e#4650#4683#0" expanded="false" />
+            <element signature="e#4871#4886#0" expanded="false" />
             <element signature="method#endSession#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#preInitPhase#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#initPhase#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#5938:6417" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#5938:6417" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#5938:6417" expanded="false" />
-            <element signature="class#6463:7012" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#6463:7012" expanded="false" />
+            <element signature="e#5577#7323#0" expanded="true" />
+            <element signature="method#onAnimationEnd#0;class#6110:6589" expanded="false" />
+            <element signature="class#6635:7184" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#6635:7184" expanded="false" />
+            <element signature="e#7322#7323#0" expanded="true" />
             <element signature="method#endPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#chooseSample#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#8742#8761#0" expanded="false" />
-            <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#chooseInstruction#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#setInstruction#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadInstruction#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadInstructionView#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadSampleView#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#checkForZoomChange#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#zoomInstructionCheck#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onZoomChanged#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#checkInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#getInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#14744:15420" expanded="false" />
-            <element signature="method#onTick#0;class#14744:15420" expanded="false" />
-            <element signature="e#15200#15227#0" expanded="false" />
+            <element signature="class#11667:12343" expanded="false" />
+            <element signature="method#onTick#0;class#11667:12343" expanded="false" />
+            <element signature="e#12123#12150#0" expanded="false" />
             <element signature="method#initializeFaceLevel#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#handleState#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#manageCurrentFace#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#16274#16324#0" expanded="false" />
+            <element signature="e#13197#13247#0" expanded="false" />
             <element signature="method#checkInstruction#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#16850:17068" expanded="false" />
-            <element signature="class#17646:18508" expanded="false" />
-            <element signature="class#18862:19210" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#18862:19210" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#18862:19210" expanded="false" />
+            <element signature="class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#ToastHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="e#15158#15432#0" expanded="true" />
+            <element signature="e#15431#15432#0" expanded="true" />
+            <element signature="class#SampleHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#15838:16186" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#15838:16186" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4368,7 +4626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4379,6 +4636,14 @@
           <folding>
             <element signature="method#ZoomControl#0;class#ZoomControl#0" expanded="false" />
             <element signature="method#addMode#0;class#ZoomControl#0" expanded="false" />
+            <element signature="e#1097#1098#0" expanded="false" />
+            <element signature="e#1123#1124#0" expanded="false" />
+            <element signature="e#1155#1156#0" expanded="false" />
+            <element signature="e#1180#1181#0" expanded="false" />
+            <element signature="e#1209#1210#0" expanded="false" />
+            <element signature="e#1233#1234#0" expanded="false" />
+            <element signature="e#1273#1274#0" expanded="false" />
+            <element signature="e#1322#1323#0" expanded="false" />
             <element signature="method#checkCurrentZoomLevel#0;class#ZoomControl#0" expanded="false" />
             <element signature="method#runZoomLevelCorrect#0;class#ZoomControl#0" expanded="false" />
             <element signature="class#Mode#0;class#ZoomControl#0" expanded="false" />
@@ -4394,7 +4659,6 @@
           <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1473#1479#0" expanded="false" />
             <element signature="method#detectFaces#0;class#FeatureDetection#0" expanded="false" />
             <element signature="e#2422#2443#0" expanded="false" />
             <element signature="method#detectKalmanFaces#0;class#FeatureDetection#0" expanded="false" />
@@ -4436,10 +4700,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="235" column="17" selection-start-line="235" selection-start-column="17" selection-end-line="235" selection-end-column="17" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="initializer##0;class#SvActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#SvActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#SvActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#SvActivity#0" expanded="false" />
+            <element signature="e#6346#6347#0" expanded="false" />
+            <element signature="e#6369#6370#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4466,49 +4733,48 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#ZoomFragment#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#onAttach#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#onStart#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#onCreateView#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#setupSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#4336#4368#0" expanded="false" />
+            <element signature="e#4492#4524#0" expanded="false" />
             <element signature="method#startSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#4494#4527#0" expanded="false" />
-            <element signature="e#4715#4730#0" expanded="false" />
+            <element signature="e#4650#4683#0" expanded="false" />
+            <element signature="e#4871#4886#0" expanded="false" />
             <element signature="method#endSession#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#preInitPhase#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#initPhase#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#5938:6417" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#5938:6417" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#5938:6417" expanded="false" />
-            <element signature="class#6463:7012" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#6463:7012" expanded="false" />
+            <element signature="e#5577#7323#0" expanded="true" />
+            <element signature="method#onAnimationEnd#0;class#6110:6589" expanded="false" />
+            <element signature="class#6635:7184" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#6635:7184" expanded="false" />
+            <element signature="e#7322#7323#0" expanded="true" />
             <element signature="method#endPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#chooseSample#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#8742#8761#0" expanded="false" />
-            <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#chooseInstruction#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#setInstruction#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadInstruction#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadInstructionView#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadSampleView#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#checkForZoomChange#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#zoomInstructionCheck#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onZoomChanged#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#checkInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#getInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#14744:15420" expanded="false" />
-            <element signature="method#onTick#0;class#14744:15420" expanded="false" />
-            <element signature="e#15200#15227#0" expanded="false" />
+            <element signature="class#11667:12343" expanded="false" />
+            <element signature="method#onTick#0;class#11667:12343" expanded="false" />
+            <element signature="e#12123#12150#0" expanded="false" />
             <element signature="method#initializeFaceLevel#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#handleState#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#manageCurrentFace#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#16274#16324#0" expanded="false" />
+            <element signature="e#13197#13247#0" expanded="false" />
             <element signature="method#checkInstruction#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#16850:17068" expanded="false" />
-            <element signature="class#17646:18508" expanded="false" />
-            <element signature="class#18862:19210" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#18862:19210" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#18862:19210" expanded="false" />
+            <element signature="class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#ToastHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="e#15158#15432#0" expanded="true" />
+            <element signature="e#15431#15432#0" expanded="true" />
+            <element signature="class#SampleHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#15838:16186" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#15838:16186" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4527,7 +4793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4538,6 +4803,14 @@
           <folding>
             <element signature="method#ZoomControl#0;class#ZoomControl#0" expanded="false" />
             <element signature="method#addMode#0;class#ZoomControl#0" expanded="false" />
+            <element signature="e#1097#1098#0" expanded="false" />
+            <element signature="e#1123#1124#0" expanded="false" />
+            <element signature="e#1155#1156#0" expanded="false" />
+            <element signature="e#1180#1181#0" expanded="false" />
+            <element signature="e#1209#1210#0" expanded="false" />
+            <element signature="e#1233#1234#0" expanded="false" />
+            <element signature="e#1273#1274#0" expanded="false" />
+            <element signature="e#1322#1323#0" expanded="false" />
             <element signature="method#checkCurrentZoomLevel#0;class#ZoomControl#0" expanded="false" />
             <element signature="method#runZoomLevelCorrect#0;class#ZoomControl#0" expanded="false" />
             <element signature="class#Mode#0;class#ZoomControl#0" expanded="false" />
@@ -4553,7 +4826,6 @@
           <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1473#1479#0" expanded="false" />
             <element signature="method#detectFaces#0;class#FeatureDetection#0" expanded="false" />
             <element signature="e#2422#2443#0" expanded="false" />
             <element signature="method#detectKalmanFaces#0;class#FeatureDetection#0" expanded="false" />
@@ -4595,10 +4867,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="initializer##0;class#SvActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#SvActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#SvActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#SvActivity#0" expanded="false" />
+            <element signature="e#6346#6347#0" expanded="false" />
+            <element signature="e#6369#6370#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4615,49 +4890,48 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="267" column="5" selection-start-line="258" selection-start-column="4" selection-end-line="267" selection-end-column="5" />
           <folding>
-            <element signature="method#ZoomFragment#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#onAttach#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#onStart#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#onCreateView#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#setupSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#4336#4368#0" expanded="false" />
+            <element signature="e#4492#4524#0" expanded="false" />
             <element signature="method#startSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#4494#4527#0" expanded="false" />
-            <element signature="e#4715#4730#0" expanded="false" />
+            <element signature="e#4650#4683#0" expanded="false" />
+            <element signature="e#4871#4886#0" expanded="false" />
             <element signature="method#endSession#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#preInitPhase#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#initPhase#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#5938:6417" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#5938:6417" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#5938:6417" expanded="false" />
-            <element signature="class#6463:7012" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#6463:7012" expanded="false" />
+            <element signature="e#5577#7323#0" expanded="true" />
+            <element signature="method#onAnimationEnd#0;class#6110:6589" expanded="false" />
+            <element signature="class#6635:7184" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#6635:7184" expanded="false" />
+            <element signature="e#7322#7323#0" expanded="true" />
             <element signature="method#endPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#chooseSample#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#8742#8761#0" expanded="false" />
-            <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#chooseInstruction#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#setInstruction#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadInstruction#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadInstructionView#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadSampleView#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#checkForZoomChange#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#zoomInstructionCheck#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onZoomChanged#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#checkInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#getInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#14744:15420" expanded="false" />
-            <element signature="method#onTick#0;class#14744:15420" expanded="false" />
-            <element signature="e#15200#15227#0" expanded="false" />
+            <element signature="class#11667:12343" expanded="false" />
+            <element signature="method#onTick#0;class#11667:12343" expanded="false" />
+            <element signature="e#12123#12150#0" expanded="false" />
             <element signature="method#initializeFaceLevel#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#handleState#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#manageCurrentFace#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#16274#16324#0" expanded="false" />
+            <element signature="e#13197#13247#0" expanded="false" />
             <element signature="method#checkInstruction#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#16850:17068" expanded="false" />
-            <element signature="class#17646:18508" expanded="false" />
-            <element signature="class#18862:19210" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#18862:19210" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#18862:19210" expanded="false" />
+            <element signature="class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#ToastHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="e#15158#15432#0" expanded="true" />
+            <element signature="e#15431#15432#0" expanded="true" />
+            <element signature="class#SampleHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#15838:16186" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#15838:16186" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4666,7 +4940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4677,6 +4950,14 @@
           <folding>
             <element signature="method#ZoomControl#0;class#ZoomControl#0" expanded="false" />
             <element signature="method#addMode#0;class#ZoomControl#0" expanded="false" />
+            <element signature="e#1097#1098#0" expanded="false" />
+            <element signature="e#1123#1124#0" expanded="false" />
+            <element signature="e#1155#1156#0" expanded="false" />
+            <element signature="e#1180#1181#0" expanded="false" />
+            <element signature="e#1209#1210#0" expanded="false" />
+            <element signature="e#1233#1234#0" expanded="false" />
+            <element signature="e#1273#1274#0" expanded="false" />
+            <element signature="e#1322#1323#0" expanded="false" />
             <element signature="method#checkCurrentZoomLevel#0;class#ZoomControl#0" expanded="false" />
             <element signature="method#runZoomLevelCorrect#0;class#ZoomControl#0" expanded="false" />
             <element signature="class#Mode#0;class#ZoomControl#0" expanded="false" />
@@ -4692,7 +4973,6 @@
           <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1473#1479#0" expanded="false" />
             <element signature="method#detectFaces#0;class#FeatureDetection#0" expanded="false" />
             <element signature="e#2422#2443#0" expanded="false" />
             <element signature="method#detectKalmanFaces#0;class#FeatureDetection#0" expanded="false" />
@@ -4741,49 +5021,48 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#ZoomFragment#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#onAttach#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#onStart#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#onCreateView#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#setupSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#4336#4368#0" expanded="false" />
+            <element signature="e#4492#4524#0" expanded="false" />
             <element signature="method#startSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#4494#4527#0" expanded="false" />
-            <element signature="e#4715#4730#0" expanded="false" />
+            <element signature="e#4650#4683#0" expanded="false" />
+            <element signature="e#4871#4886#0" expanded="false" />
             <element signature="method#endSession#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#preInitPhase#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#initPhase#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#5938:6417" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#5938:6417" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#5938:6417" expanded="false" />
-            <element signature="class#6463:7012" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#6463:7012" expanded="false" />
+            <element signature="e#5577#7323#0" expanded="true" />
+            <element signature="method#onAnimationEnd#0;class#6110:6589" expanded="false" />
+            <element signature="class#6635:7184" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#6635:7184" expanded="false" />
+            <element signature="e#7322#7323#0" expanded="true" />
             <element signature="method#endPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#chooseSample#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#8742#8761#0" expanded="false" />
-            <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#chooseInstruction#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#setInstruction#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadInstruction#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadInstructionView#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadSampleView#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#checkForZoomChange#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#zoomInstructionCheck#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onZoomChanged#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#checkInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#getInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#14744:15420" expanded="false" />
-            <element signature="method#onTick#0;class#14744:15420" expanded="false" />
-            <element signature="e#15200#15227#0" expanded="false" />
+            <element signature="class#11667:12343" expanded="false" />
+            <element signature="method#onTick#0;class#11667:12343" expanded="false" />
+            <element signature="e#12123#12150#0" expanded="false" />
             <element signature="method#initializeFaceLevel#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#handleState#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#manageCurrentFace#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#16274#16324#0" expanded="false" />
+            <element signature="e#13197#13247#0" expanded="false" />
             <element signature="method#checkInstruction#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#16850:17068" expanded="false" />
-            <element signature="class#17646:18508" expanded="false" />
-            <element signature="class#18862:19210" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#18862:19210" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#18862:19210" expanded="false" />
+            <element signature="class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#ToastHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="e#15158#15432#0" expanded="true" />
+            <element signature="e#15431#15432#0" expanded="true" />
+            <element signature="class#SampleHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#15838:16186" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#15838:16186" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4800,49 +5079,48 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
           <folding>
-            <element signature="method#ZoomFragment#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#onAttach#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#onStart#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#onCreateView#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#setupSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#4336#4368#0" expanded="false" />
+            <element signature="e#4492#4524#0" expanded="false" />
             <element signature="method#startSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#4494#4527#0" expanded="false" />
-            <element signature="e#4715#4730#0" expanded="false" />
+            <element signature="e#4650#4683#0" expanded="false" />
+            <element signature="e#4871#4886#0" expanded="false" />
             <element signature="method#endSession#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#preInitPhase#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#initPhase#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#5938:6417" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#5938:6417" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#5938:6417" expanded="false" />
-            <element signature="class#6463:7012" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#6463:7012" expanded="false" />
+            <element signature="e#5577#7323#0" expanded="true" />
+            <element signature="method#onAnimationEnd#0;class#6110:6589" expanded="false" />
+            <element signature="class#6635:7184" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#6635:7184" expanded="false" />
+            <element signature="e#7322#7323#0" expanded="true" />
             <element signature="method#endPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#chooseSample#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#8742#8761#0" expanded="false" />
-            <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#chooseInstruction#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#setInstruction#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadInstruction#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadInstructionView#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadSampleView#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#checkForZoomChange#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#zoomInstructionCheck#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onZoomChanged#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#checkInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#getInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#14744:15420" expanded="false" />
-            <element signature="method#onTick#0;class#14744:15420" expanded="false" />
-            <element signature="e#15200#15227#0" expanded="false" />
+            <element signature="class#11667:12343" expanded="false" />
+            <element signature="method#onTick#0;class#11667:12343" expanded="false" />
+            <element signature="e#12123#12150#0" expanded="false" />
             <element signature="method#initializeFaceLevel#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#handleState#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#manageCurrentFace#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#16274#16324#0" expanded="false" />
+            <element signature="e#13197#13247#0" expanded="false" />
             <element signature="method#checkInstruction#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#16850:17068" expanded="false" />
-            <element signature="class#17646:18508" expanded="false" />
-            <element signature="class#18862:19210" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#18862:19210" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#18862:19210" expanded="false" />
+            <element signature="class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#ToastHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="e#15158#15432#0" expanded="true" />
+            <element signature="e#15431#15432#0" expanded="true" />
+            <element signature="class#SampleHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#15838:16186" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#15838:16186" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4950,7 +5228,6 @@
           <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1473#1479#0" expanded="false" />
             <element signature="method#detectFaces#0;class#FeatureDetection#0" expanded="false" />
             <element signature="e#2422#2443#0" expanded="false" />
             <element signature="method#detectKalmanFaces#0;class#FeatureDetection#0" expanded="false" />
@@ -5018,17 +5295,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.061705988">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/ZoomControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0370371">
+        <state vertical-scroll-proportion="0.0">
           <caret line="90" column="21" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
           <folding>
             <element signature="method#ZoomControl#0;class#ZoomControl#0" expanded="false" />
             <element signature="method#addMode#0;class#ZoomControl#0" expanded="false" />
+            <element signature="e#1097#1098#0" expanded="false" />
+            <element signature="e#1123#1124#0" expanded="false" />
+            <element signature="e#1155#1156#0" expanded="false" />
+            <element signature="e#1180#1181#0" expanded="false" />
+            <element signature="e#1209#1210#0" expanded="false" />
+            <element signature="e#1233#1234#0" expanded="false" />
+            <element signature="e#1273#1274#0" expanded="false" />
+            <element signature="e#1322#1323#0" expanded="false" />
             <element signature="method#checkCurrentZoomLevel#0;class#ZoomControl#0" expanded="false" />
             <element signature="method#runZoomLevelCorrect#0;class#ZoomControl#0" expanded="false" />
             <element signature="class#Mode#0;class#ZoomControl#0" expanded="false" />
@@ -5043,65 +5327,96 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="278" column="0" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="initializer##0;class#SvActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#SvActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#SvActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#SvActivity#0" expanded="false" />
+            <element signature="e#6346#6347#0" expanded="false" />
+            <element signature="e#6369#6370#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ZoomFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3629764">
-          <caret line="400" column="34" selection-start-line="400" selection-start-column="34" selection-end-line="400" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
           <folding>
-            <element signature="method#ZoomFragment#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#onAttach#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#onStart#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#onCreateView#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#setupSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#4336#4368#0" expanded="false" />
+            <element signature="e#4492#4524#0" expanded="false" />
             <element signature="method#startSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#4494#4527#0" expanded="false" />
-            <element signature="e#4715#4730#0" expanded="false" />
+            <element signature="e#4650#4683#0" expanded="false" />
+            <element signature="e#4871#4886#0" expanded="false" />
             <element signature="method#endSession#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#preInitPhase#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#initPhase#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#5938:6417" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#5938:6417" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#5938:6417" expanded="false" />
-            <element signature="class#6463:7012" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#6463:7012" expanded="false" />
+            <element signature="e#5577#7323#0" expanded="true" />
+            <element signature="method#onAnimationEnd#0;class#6110:6589" expanded="false" />
+            <element signature="class#6635:7184" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#6635:7184" expanded="false" />
+            <element signature="e#7322#7323#0" expanded="true" />
             <element signature="method#endPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#chooseSample#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#8742#8761#0" expanded="false" />
-            <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#chooseInstruction#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#setInstruction#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadInstruction#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#loadSample#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadInstructionView#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#loadSampleView#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#checkForZoomChange#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#zoomInstructionCheck#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onZoomChanged#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#checkInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#getInitialPhaseFace#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#14744:15420" expanded="false" />
-            <element signature="method#onTick#0;class#14744:15420" expanded="false" />
-            <element signature="e#15200#15227#0" expanded="false" />
+            <element signature="class#11667:12343" expanded="false" />
+            <element signature="method#onTick#0;class#11667:12343" expanded="false" />
+            <element signature="e#12123#12150#0" expanded="false" />
             <element signature="method#initializeFaceLevel#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#handleState#0;class#ZoomFragment#0" expanded="false" />
             <element signature="method#manageCurrentFace#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#16274#16324#0" expanded="false" />
+            <element signature="e#13197#13247#0" expanded="false" />
             <element signature="method#checkInstruction#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#16850:17068" expanded="false" />
-            <element signature="class#17646:18508" expanded="false" />
-            <element signature="class#18862:19210" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#18862:19210" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#18862:19210" expanded="false" />
+            <element signature="class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#ToastHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="e#15158#15432#0" expanded="true" />
+            <element signature="e#15431#15432#0" expanded="true" />
+            <element signature="class#SampleHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#15838:16186" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#15838:16186" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47803164">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#chooseSample#0;class#Session#0" expanded="false" />
+            <element signature="e#1661#1680#0" expanded="false" />
+            <element signature="method#setInstruction#0;class#Session#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Android API 23 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
