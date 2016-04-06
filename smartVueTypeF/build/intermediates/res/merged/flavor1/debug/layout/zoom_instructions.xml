@@ -28,4 +28,4 @@
         android:id="@+id/instructions"
         android:layout_gravity="bottom"></FrameLayout>
 
-</LinearLayout><!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/src/main/res/layout/zoom_instructions.xml -->
+</LinearLayout><!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/src/main/res/layout/zoom_instructions.xml -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -168,11 +168,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
@@ -187,10 +187,10 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/src/main/res/values/ids.xml -->
+    <!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="action_next" type="id"/>
-    <!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
     <item name="progress_circular" type="id"/>
@@ -221,7 +221,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_add_item">Add item</string>
     <string name="action_finish">Finish</string>
@@ -240,22 +240,22 @@
     <string name="page_2">Page 2</string>
     <string name="ready">READY!</string>
     <string name="recreate">Recreate</string>
-    <!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title">Phase Title</string>
     <string name="title_screen_slide">Screen Slide</string>
     <string name="title_template_step">Step <ns1:g id="step_number">%1$d</ns1:g>: Lorem
         Ipsum</string>
-    <!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
@@ -267,7 +267,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/C:/Users/Omari/Documents/GitHub/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
