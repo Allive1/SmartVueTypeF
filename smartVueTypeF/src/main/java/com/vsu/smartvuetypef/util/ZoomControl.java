@@ -4,17 +4,12 @@ import android.util.SparseArray;
 
 public class ZoomControl {
 	protected int maxModes = 0, currentFaceSize = 0;
-	protected SparseArray<Mode> zoomModes = new SparseArray<Mode>();
+	protected SparseArray<Mode> zoomModes = new SparseArray<>();
 	protected int currentMode;
 	// private int faceAvg;
 	public boolean modeChange = false;
 	private String TAG = "ZoomControl";
 	OnZoomChangedListener mCallback;
-
-	// Defines a field that contains the calling object of type PhotoTask.
-	// final TaskRunnableZoomMethods mFaceFragment;
-	// A static block that sets class fields
-	
 
 	public ZoomControl(android.support.v4.app.Fragment fragment) {
 		try {
@@ -55,13 +50,9 @@ public class ZoomControl {
 
 	public boolean checkCurrentZoomLevel() {
 		// Measure size against current mode
-		if (currentFaceSize < zoomModes.get(currentMode).max_face
-				&& currentFaceSize > zoomModes.get(currentMode).min_face) {
-			// Leave mode as is
-			return true;
-		} else {
-			return false;
-		}
+		// Leave mode as is
+		return currentFaceSize < zoomModes.get(currentMode).max_face
+				&& currentFaceSize > zoomModes.get(currentMode).min_face;
 	}
 
 	public void runZoomLevelCorrect(int newFace) {

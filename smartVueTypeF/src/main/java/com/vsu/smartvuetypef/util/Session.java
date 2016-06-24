@@ -10,21 +10,39 @@ import java.io.InputStreamReader;
 import java.util.Random;
 
 import main.java.com.vsu.smartvuetypef.R;
+import main.java.com.vsu.smartvuetypef.features.ZoomFragment;
 
-/**
- * Created by Omari on 3/27/2016.
- */
 public class Session {
     private static final String TAG = "Session";
     Context context;
     String currentSample;
+
+    private int calibrationFace;
+    public int phaseIndex = 0;
+
+    int expectedMode;
+    String incFont = "Please increase text size",
+            decFont = "Please decrease text size", currentInstruction, ackMsg = "Phase Completed";
+
     public Session(Context c){
         context = c;
     }
-    public void start(){
 
+    public void start(){
+        //Setup parameters
+            chooseInstruction();
+            chooseSample();
+        //return selection
+        ZoomFragment.loadPhase();
     }
 
+    public void setCalibrationFace(int c){
+        calibrationFace = c;
+    }
+
+    public int getCalibrationFace(){
+        return calibrationFace;
+    }
     /*
    * Sample Methods
    */
@@ -68,7 +86,9 @@ public class Session {
         }
     }
 
-
+    public String getSample(){
+        return currentSample;
+    }
 
     /*
      * Instruction Method
@@ -78,28 +98,32 @@ public class Session {
 
         if (calibrationFace < 100) {
             zoom = 0;
-            zoomController.setMode(0);
+            ZoomFragment.zoomController.setMode(0);
         } else {
             // see which level it fits into
-            zoom = zoomController.checkFaceLevel(calibrationFace);
-            zoomController.setMode(zoom);
+            zoom = ZoomFragment.zoomController.checkFaceLevel(calibrationFace);
+            ZoomFragment.zoomController.setMode(zoom);
         }
         Log.d(TAG, "Calibration Face: " + zoom);
 
         // if face is in mid-level
         switch (zoom) {
             case 0:
+                // Set the intended instruction
+                currentInstruction = incFont;
                 setInstruction(1);
                 break;
             case 1:
                 int random = (int) (Math.random() * 2 + 1);
                 if (random == 0)
-                    setInstruction(0);
+                    // Set the intended instruction
+                    currentInstruction = decFont;
                 else
-                    setInstruction(1);
+                // Set the intended instruction
+                currentInstruction = incFont;
                 break;
             case 2:
-                setInstruction(0);
+                currentInstruction = decFont;
                 break;
             default:
                 Log.d(TAG, "Instruction selection failed");
@@ -109,27 +133,42 @@ public class Session {
         }
     }
 
+    public String getInstruction() {
+//        if (index == 0) {
+//            // Set the intended instruction
+//            currentInstruction = decFont;
+//            // Set the expected mode change
+//            expectedMode = ZoomFragment.zoomController.getCurrentMode() - 1;
+//        } else if (index == 1) {
+//            // Set the intended instruction
+//            currentInstruction = incFont;
+//            // Set the expected mode change
+//            expectedMode = ZoomFragment.zoomController.getCurrentMode() + 1;
+//        } else {
+//            Log.d(TAG, "Instruction set failed");
+//        }
+//        Log.d(TAG, "Current ZoomControl: " + ZoomFragment.zoomController.getCurrentMode()
+//                + " Expected ZoomControl: " + expectedMode);
+        return currentInstruction;
+    }
+
     public void setInstruction(int index) {
         if (index == 0) {
-            // Set the intended instruction
-            currentInstruction = decFont;
             // Set the expected mode change
-            expectedMode = zoomController.getCurrentMode() - 1;
+            expectedMode = ZoomFragment.zoomController.getCurrentMode() - 1;
         } else if (index == 1) {
-            // Set the intended instruction
-            currentInstruction = incFont;
+
             // Set the expected mode change
-            expectedMode = zoomController.getCurrentMode() + 1;
+            expectedMode = ZoomFragment.zoomController.getCurrentMode() + 1;
         } else {
             Log.d(TAG, "Instruction set failed");
         }
-        Log.d(TAG, "Current ZoomControl: " + zoomController.getCurrentMode()
+        Log.d(TAG, "Current ZoomControl: " + ZoomFragment.zoomController.getCurrentMode()
                 + " Expected ZoomControl: " + expectedMode);
 
     }
 
-    public String getSample(){
-        return currentSample;
-    }
-
+   public int getExpectedMode(){
+       return expectedMode;
+   }
 }

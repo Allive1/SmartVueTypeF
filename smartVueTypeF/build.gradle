@@ -3,7 +3,7 @@ apply plugin: 'com.android.model.application'
 model {
     android {
         compileSdkVersion = 23
-        buildToolsVersion = "23.0.1"
+        buildToolsVersion = "23.0.3"
 
         defaultConfig.with {
             applicationId = "com.vsu.smartvuetypef"
@@ -12,27 +12,26 @@ model {
         }
     }
 
+
     android.ndk {
             moduleName = "smartvue"
-            CFlags += "-DANDROID_NDK"
-            ldLibs += ["android","opencv2", "log"]
-            cppFlags  += "-I${file("src/main/jni/prebuilts/include")}".toString()
-    }
-
-    android.buildTypes {
+            CFlags.add("-DANDROID_NDK")
+            ldLibs.add("android")
+        ldLibs.add("opencv2")
+        ldLibs.add("log")
+            cppFlags.add("-I${file("src/main/jni/prebuilts/include")}".toString())
+        }
+        android.buildTypes {
             release {
                 minifyEnabled = false
-                proguardFiles += file('proguard-android.pro')
+                proguardFiles.add(file('proguard-android.pro'))
             }
-    }
-
-    android.productFlavors {
-        create("flavor1") {
-            applicationId = "com.smartvue"
         }
-    }
-
-    // Configures source set directory.
+        android.productFlavors {
+            create("flavor1") {
+                applicationId = "com.smartvue"
+            }
+        }
     android.sources {
         main {
             java {
@@ -42,13 +41,13 @@ model {
             }
         }
     }
-    }
+}
 
 dependencies {
     compile project(':opencv')
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.parse.bolts:bolts-android:1.+'
-    compile 'com.parse:parse-android:1.+'
-    compile 'com.android.support:support-v4:23.1.0'
-    compile 'com.android.support:support-v13:23.1.0'
+    compile 'com.parse.bolts:bolts-android:1.2.1'
+    compile 'com.parse:parse-android:1.10.3'
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.android.support:support-v13:23.0.0'
 }

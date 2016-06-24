@@ -24,4 +24,3 @@
         android:layout_below="@+id/textView1" />
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/Omari/StudioProjects/SmartVueTypeF/smartVueTypeF/src/main/res/layout/calibration_content.xml -->

@@ -34,18 +34,14 @@ import main.java.com.vsu.smartvuetypef.view.InstructionsFragment;
 public class SvActivity extends FeatureDetection implements InstructionsFragment.OnInstructionCompletedListener{
 	private static final String TAG = "SvActivity";
 
-	int random;
 	FragmentTransaction transaction;
 	FragmentManager manager;
-	int phase = 1;
-    double mCalibrationFace=0;
-	Fragment features, instruct;
+	int phase = 1, faceAvg = 0, faceSum = 0;
+    double mCalibrationFace = 0;
+	Fragment instruct;
 	Fragment fragment;
 	private static SvActivity sInstance = null;
-	Toast toast;
-    public static FeatureDetection faceDetector;
-    private MyKalmanFilter KF = null;
-    int iscene = 0, f = 0;
+    int f = 0;
 	OnFaceRecognizedListener mFeatureCallback;
 	ArrayList <Integer> faceQueue = new ArrayList<>();
 	int faceIndex = 0, calibrate_face = 0;
@@ -54,7 +50,6 @@ public class SvActivity extends FeatureDetection implements InstructionsFragment
 	static {
 		// Creates a single static instance of PhotoManager
 		sInstance = new SvActivity();
-
 	}
 
 	@Override
@@ -218,14 +213,16 @@ public class SvActivity extends FeatureDetection implements InstructionsFragment
             case 0:
                 Log.d(TAG, "ZoomControl Case");
 				try {
-
+					//if no faces
 					if(faceIndex<0) {
 						for (int i = 0; i <= faceIndex; i++) {
 							calibrate_face += faceQueue.get(i);
 						}
 						calibrate_face = calibrate_face / (faceIndex + 1);
-					}else {
-						calibrate_face = 0;
+					}
+					//take average
+					else {
+						calibrate_face = faceAvg;
 					}
 					fragment = new ZoomFragment();
 					Bundle args = new Bundle();
@@ -265,21 +262,23 @@ public class SvActivity extends FeatureDetection implements InstructionsFragment
 	public void onFaceRecognized(){
 		super.onFaceRecognized();
 		if(faceQueue.size()==5) {
+			faceSum = faceSum - faceQueue.get(faceIndex) + foundFace;
+			faceAvg = faceSum / 5;
 			faceQueue.set(faceIndex, foundFace);
 		}
-		else
-			faceQueue.add(foundFace);
-		//Log.d(TAG, "Face Index: " + faceIndex);
+		else {
+            faceQueue.add(foundFace);
+			faceSum = faceSum + foundFace;
+			faceAvg = faceSum / faceQueue.size();
+		}
+
 		if(faceIndex==4)
 			faceIndex=0;
 		else
 			faceIndex++;
-		//Log.d(TAG, "Face Found: " + foundFace);
+
 		if(mFeatureCallback!=null)
-			mFeatureCallback.checkForZoomChange(foundFace);
-		else{
-			faceQueue.add(foundFace);
-		}
+			mFeatureCallback.checkForZoomChange(faceAvg);
 	}
 
 	public interface OnFaceRecognizedListener {
