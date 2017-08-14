@@ -14,15 +14,17 @@ import main.java.com.vsu.smartvuetypef.features.ZoomFragment;
 
 public class Session {
     private static final String TAG = "Session";
-    Context context;
-    String currentSample;
+    private Context context;
+    private String currentSample;
 
     private int calibrationFace;
-    public int phaseIndex = 0;
+    private int phaseIndex = 0;
 
-    int expectedMode;
-    String incFont = "Please increase text size",
+    private int expectedMode;
+    private String incFont = "Please increase text size",
             decFont = "Please decrease text size", currentInstruction, ackMsg = "Phase Completed";
+
+    ZoomFragment zoomFragment;
 
     public Session(Context c){
         context = c;
@@ -32,8 +34,6 @@ public class Session {
         //Setup parameters
             chooseInstruction();
             chooseSample();
-        //return selection
-        ZoomFragment.loadPhase();
     }
 
     public void setCalibrationFace(int c){
@@ -46,7 +46,7 @@ public class Session {
     /*
    * Sample Methods
    */
-    public void chooseSample() {
+    private void chooseSample() {
         Random random = new Random();
         long range = 3 - 1 + 1;
         // compute a fraction of the range, 0 <= frac < range
@@ -93,7 +93,7 @@ public class Session {
     /*
      * Instruction Method
      */
-    public void chooseInstruction() {
+    private void chooseInstruction() {
         int zoom;
 
         if (calibrationFace < 100) {

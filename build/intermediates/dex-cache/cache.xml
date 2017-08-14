@@ -1,3 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\Omari\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.10.3\36366e460af2c0f224bb8f70b64e3302f638b138\parse-android-1.10.3.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="36366e460af2c0f224bb8f70b64e3302f638b138">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\parse-android-1.10.3_100ab8a598123e0da92e8144496c872feabd6c64.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\com.android.support-animated-vector-drawable-25.0.0_a769fdd1b6146558b2ecd14ee1bab376c573c71f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\internal_impl-25.0.0_8f74984e0ea4e9f5c697cc16b9e1959fc7dd2fa4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\internal_impl-25.0.0_d48563df72834a821025701a68b04d499ca12a51.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\com.android.support-appcompat-v7-25.0.0_d2d8ab7d3a1daec1f2723c548dbda943365dd16e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\com.android.support-support-fragment-25.0.0_96babafc2e9a66e6ffc045e4b275f94a351d574d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\internal_impl-25.0.0_1bbcf496395ca4cfdcfd60df41d0acc3f7404455.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\SmartVueTypeF\opencv\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="0c9beb5c9c618f2c5680bb118b5681bd9c879bb7">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\SmartVueTypeF-opencv-unspecified_1b63b25419916219ccca7a73dcb4cb64c90e1db3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v13\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="67355078cd30daae43f62ba47a4663ee6edb976e">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\internal_impl-25.0.0_ae8e660637ecd072bcf46ee6feb372035d6bbd98.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\com.android.support-support-v4-25.0.0_faa6fed8a4617a9e1102587d046cb33df7bf8637.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\com.android.support-support-core-ui-25.0.0_60b6ebca7677d3fc3b69cd70e1708bd55a7b38d0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-v13\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="6ac094121e75b4b87432beb9305d70c68ec6dcab">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\com.android.support-support-v13-25.0.0_478fd496978dbb6d04b665e363fca41051237e8d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\SmartVueTypeF\opencv\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="9e2f5e28079ad9eb8d05ff25f979ffb39d9a2f82">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\SmartVueTypeF-opencv-unspecified_1b63b25419916219ccca7a73dcb4cb64c90e1db3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.1\44780c2cf98f6a3cf4e77f1234d644758b329201\bolts-android-1.2.1.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\bolts-android-1.2.1_1fb86c942cbab276225aed78c969e9fe31640539.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\com.android.support-support-media-compat-25.0.0_68ac08828413e80d90b530728b3e711a48a1a368.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\internal_impl-25.0.0_dc494a0681ccd880c22826494b27bae482aae030.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\internal_impl-25.0.0_1be8abc2ec7c36a283f032cb3585e33e6733572d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\com.android.support-support-compat-25.0.0_80a4634bca3f33a2893fb00cd732611befb8781e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\support-annotations-25.0.0_986da1ba07e0f470ded1dc219c8b9b63f65b6324.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\com.android.support-support-vector-drawable-25.0.0_56b21d425e49e4d1746836b5960618694aa43aaf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\com.android.support-support-core-utils-25.0.0_0a3f9bb7c517e3291be6eb5606a7fe2cc8b7497b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.10.3\36366e460af2c0f224bb8f70b64e3302f638b138\parse-android-1.10.3.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="36366e460af2c0f224bb8f70b64e3302f638b138">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\parse-android-1.10.3_100ab8a598123e0da92e8144496c872feabd6c64.jar" />
+    </item>
+    <item
+        jar="C:\Users\Omari\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.1\44780c2cf98f6a3cf4e77f1234d644758b329201\bolts-android-1.2.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
+        <dex dex="C:\Users\Omari\StudioProjects\SmartVueTypeF\smartVueTypeF\build\intermediates\pre-dexed\flavor1\debug\bolts-android-1.2.1_1fb86c942cbab276225aed78c969e9fe31640539.jar" />
+    </item>
+
+</items>

@@ -30,7 +30,6 @@ import main.java.com.vsu.smartvuetypef.model.FeatureDetection;
 import main.java.com.vsu.smartvuetypef.model.MyKalmanFilter;
 import main.java.com.vsu.smartvuetypef.view.InstructionsFragment;
 
-
 public class SvActivity extends FeatureDetection implements InstructionsFragment.OnInstructionCompletedListener{
 	private static final String TAG = "SvActivity";
 
@@ -106,7 +105,7 @@ public class SvActivity extends FeatureDetection implements InstructionsFragment
 							Log.e(TAG, "Failed to load cascade. Exception thrown: " + e);
 						}
 						// mOpenCvCameraView.enableFpsMeter();
-						mOpenCvCameraView.setCameraIndex(0);
+						mOpenCvCameraView.setCameraIndex(1);
 						mOpenCvCameraView.enableView();
 					}
 					break;
@@ -277,7 +276,10 @@ public class SvActivity extends FeatureDetection implements InstructionsFragment
 		else
 			faceIndex++;
 
+		//if feature is set
 		if(mFeatureCallback!=null)
+			//if feature is checking
+		//if(mFeatureCallback.check==true)
 			mFeatureCallback.checkForZoomChange(faceAvg);
 	}
 

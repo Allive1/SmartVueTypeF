@@ -34,19 +34,19 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
     private static final String TAG = "ZoomFragment";
     public static final int JAVA_DETECTOR = 0;
     public static final int NATIVE_DETECTOR = 1;
-    static Session session;
-    private String[] mDetectorName;
+    private static boolean zoomSwitch = true;
+    Session session;
 
     int maxWidth = 720, maxHeight = 576, faceSize, initZoom = -1, phaseResult, totalPhases = 1;
 
     static int stage = 0;
     Face lkgFace = new Face();
 
-    boolean faceCheck, sampleReady = false, contentActive = true;
+    boolean faceCheck, sampleReady = false, contentActive = false, facialSwitch = true;
 
-    public static Context mContext;
-    static TextView mSampleView, contentTextView, mInstrTextView,
-            mContentView;
+    Context mContext;
+    TextView mSampleView, contentTextView, mInstrTextView;
+    TextView mContentView;
 
     public static ZoomControl zoomController;
     View showView, hideView;
@@ -60,7 +60,7 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
     Session mySession;
     static ValueAnimator fadeIn, fadeOut;
     ToastHandler myToast = new ToastHandler(Looper.getMainLooper());
-    SampleHandler mySample = new SampleHandler();
+//    SampleHandler mySample = new SampleHandler();
     InstructionHandler myInstruct = new InstructionHandler(Looper.getMainLooper());
     ZoomHandler myZoom = new ZoomHandler(Looper.getMainLooper());
 
@@ -70,7 +70,7 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
 
         phaseIn.play(instrAnim);
 
-        mDetectorName = new String[2];
+        String[] mDetectorName = new String[2];
         mDetectorName[NATIVE_DETECTOR] = "Native (tracking)";
         mDetectorName[JAVA_DETECTOR] = "Java";
 
@@ -133,21 +133,21 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
                 "alpha", 1f, 0f);
         fadeIn.setDuration(1500);
         fadeOut.setDuration(1500);
-        //startSession();
-        session.start();
+        startSampleSession();
 
         return view;
     }
 
     // Session Methods
-    public static void loadPhase() {
-        contentTextView.setTextSize(zoomController.getCurrentModeTextSize());
+    public void loadPhase() {
         new Handler(Looper.getMainLooper()).post(new Runnable() {
             @Override
             public void run() {
+                contentTextView.setTextSize(zoomController.getCurrentModeTextSize());
                 final AnimatorSet instructionSet = new AnimatorSet();
                 final AnimatorSet sampleSet = new AnimatorSet();
 
+                //Instruction Animation
                 instructionSet.addListener(new AnimatorListenerAdapter() {
                     @Override
                     public void onAnimationStart(Animator animation) {
@@ -159,14 +159,14 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
                     public void onAnimationEnd(Animator animation) {
                         sampleSet.play(fadeIn);
                         sampleSet.start();
-                        Log.d(TAG, "Sample Phase: ready");
+                        Log.d(TAG, "Instruction Set");
                     }
                 });
 
+                //Sample Animation
                 sampleSet.addListener(new AnimatorListenerAdapter() {
                     @Override
                     public void onAnimationStart(Animator animation) {
-                        //load sample
                         loadSample();
                     }
 
@@ -174,7 +174,7 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
                     public void onAnimationEnd(Animator animation) {
                         stage = 2;
                         sampleSwitch = true;
-                        Log.d(TAG, "Sample Phase: ready");
+                        Log.d(TAG, "Sample Set");
                     }
                 });
 
@@ -184,17 +184,40 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
         });
     }
 
-    public static void loadInstruction() {
-        //load content into view
+    private void loadInstruction() {
         contentTextView.setText(session.getInstruction());
     }
 
-    public static void loadSample() {
-        // <------- assign entireFile to TextView
+    private void loadSample() {
         contentTextView.setText(session.getSample());
     }
 
-    public static void playPhaseResult(){
+    private void displayResampleMessage() {
+        new Handler(Looper.getMainLooper()).post(new Runnable() {
+            @Override
+            public void run() {
+                final AnimatorSet confirmPhaseSet = new AnimatorSet();
+                final CharSequence loopMsg = "Ok. Time for another sample";
+                confirmPhaseSet.addListener(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationStart(Animator animation) {
+                        contentTextView.setText(loopMsg);
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        contentTextView.setText("");
+                        loadPhase();
+                    }
+                });
+
+                confirmPhaseSet.play(fadeOut).after(1000).after(fadeIn);
+                confirmPhaseSet.start();
+            }
+        });
+    }
+
+    public void playPhaseResult() {
         new Handler(Looper.getMainLooper()).post(new Runnable() {
             @Override
             public void run() {
@@ -236,50 +259,50 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
         });
     }
 
+    public void startSampleSession() {
+        loadPhase();
+        contentActive = true;
+    }
 
+    public void endSampleSession(){
+        //Turn off switches
 
+        //Log results
+
+        //Reset to interim state
+    }
+
+    //Record User Input
     public void checkForZoomChange(int face) {
-        if (session.getCalibrationFace() > 0 && contentActive==true) {
-            //Message msg = myZoom.obtainMessage();
-            //Message xmsg = myToast.obtainMessage();
-            zoomController.runZoomLevelCorrect(face);
+        if (session.getCalibrationFace() > 0 && contentActive) {
+            if (facialSwitch)
+                zoomController.runZoomLevelCorrect(face);
         }
     }
 
     public boolean zoomInstructionCheck(int recognizedLevel) {
         boolean result;
-//        // if currentFDD is greater than X from faceList-0
-//        if (lkgFace.getFaceSize() > faceList.get(0).getFaceSize() + 10) {
-//            Message msg = myZoom.obtainMessage();
-//            msg.arg1 = 1;
-//            myZoom.sendMessage(msg);
-//        }
-//        // if currentFDD is less than X from faceList-0
-//        else if (lkgFace.getFaceSize() > faceList.get(0).getFaceSize() - 10) {
-//            Message msg = myZoom.obtainMessage();
-//            msg.arg1 = 0;
-//            myZoom.sendMessage(msg);
-//        }
-        CharSequence test;
+        CharSequence response;
+        Message msg = new Message();
+
         // check recognized level against the expected level
         if (recognizedLevel == session.getExpectedMode()) {
             result = true;
+            response = "User Success";
             // Confirm success
             contentActive = false;
-            test = "User Success";
-            contentTextView.setText(test);
-            //handleState(1);
+            msg.obj = response;
+            myZoom.handleMessage(msg);
         }
         // else L register a fail
         else {
             result = false;
             contentActive = false;
-            test = "User Failure";
-            contentTextView.setText(test);
-            // Display failed message
-            //handleState(0);
+            response = "User Failure";
+            msg.obj = response;
+            myZoom.handleMessage(msg);
         }
-
+        facialSwitch = false;
         return result;
     }
 
@@ -289,7 +312,12 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
             // Update zoom
             if (sampleSwitch) {
                 myZoom.sendEmptyMessage(0);
-                zoomInstructionCheck(zoomController.getCurrentMode());
+                boolean result = zoomInstructionCheck(zoomController.getCurrentMode());
+                if (result) {
+                    endSampleSession();
+                } else {
+                    handleState(0);
+                }
 //                sampleSwitch = false;
 //                if (session.getExpectedMode() == zoomController.getCurrentMode())
 //                    myToast.sendEmptyMessage(1);
@@ -323,22 +351,51 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
         //sActivity.handleState(this, state, t);
     }
 
+    Handler s = new Handler(Looper.myLooper()){
+        @Override
+        public void handleMessage(Message msg){
+            //TextView content = (TextView) msg.obj;
+            ValueAnimator fadeIn = ObjectAnimator.ofFloat(mContentView,
+                    "alpha", 0f, 1f);
+            fadeIn.setDuration(1500);
+            AnimatorSet animatorSet = new AnimatorSet();
 
-    private static class ZoomHandler extends Handler {
+            animatorSet.addListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationStart(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    stage = 2;
+                    Log.d(TAG, "Sample Phase: ready");
+                }
+            });
+            animatorSet.play(fadeIn).after(1000);
+            animatorSet.start();
+        }
+    };
+
+    private class ZoomHandler extends Handler {
         ZoomHandler(Looper l) {
             super(l);
         }
+
         public void handleMessage(Message msg) {
             // Set Mode level
             Log.d(TAG, "Zoom Handler is running");
+            contentTextView.setText(msg.obj.toString());
             contentTextView.setTextSize(zoomController.getCurrentModeTextSize());
+            //Disable zoom handler
+            zoomSwitch = false;
         }
     }
 
-    private static class ToastHandler extends Handler {
-        ToastHandler(Looper l){
+    private class ToastHandler extends Handler {
+        ToastHandler(Looper l) {
             super(l);
         }
+
         public void handleMessage(Message msg) {
             if (msg.what == 1) {
                 Toast.makeText(mContext,
@@ -350,7 +407,7 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
         }
     }
 
-    private static class InstructionHandler extends Handler {
+    private class InstructionHandler extends Handler {
         InstructionHandler(Looper l) {
             super(l);
         }
@@ -372,29 +429,6 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
                     //sampHandler.sendEmptyMessage(0);
                 }
             });
-            animatorSet.start();
-        }
-    }
-
-    private static class SampleHandler extends Handler {
-        public void handleMessage(Message msg) {
-            ValueAnimator fadeIn = ObjectAnimator.ofFloat(mContentView,
-                    "alpha", 0f, 1f);
-            fadeIn.setDuration(1500);
-            AnimatorSet animatorSet = new AnimatorSet();
-
-            animatorSet.addListener(new AnimatorListenerAdapter() {
-                @Override
-                public void onAnimationStart(Animator animation) {
-                }
-
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                    stage = 2;
-                    Log.d(TAG, "Sample Phase: ready");
-                }
-            });
-            animatorSet.play(fadeIn).after(1000);
             animatorSet.start();
         }
     }
