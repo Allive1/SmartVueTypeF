@@ -1,4 +1,4 @@
-package main.java.com.vsu.smartvuetypef.features;
+package com.vsu.smartvuetypef.features;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -13,9 +13,9 @@ import org.opencv.core.Mat;
 import org.opencv.core.Point;
 import org.opencv.objdetect.CascadeClassifier;
 
-import main.java.com.vsu.smartvuetypef.model.FeatureDetection;
+import com.vsu.smartvuetypef.model.FeatureDetection;
 import main.java.com.vsu.smartvuetypef.R;
-import main.java.com.vsu.smartvuetypef.view.ScreenSlidePageFragment;
+import com.vsu.smartvuetypef.features.ScreenSlidePageFragment;
 
 import android.app.Activity;
 import android.app.FragmentManager;

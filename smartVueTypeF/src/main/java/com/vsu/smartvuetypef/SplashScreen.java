@@ -1,9 +1,11 @@
-package main.java.com.vsu.smartvuetypef;
+package com.vsu.smartvuetypef;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import main.java.com.vsu.smartvuetypef.R;
 
 public class SplashScreen extends Activity{
 

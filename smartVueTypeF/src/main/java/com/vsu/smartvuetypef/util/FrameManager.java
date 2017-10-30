@@ -1,4 +1,4 @@
-package main.java.com.vsu.smartvuetypef.util;
+package com.vsu.smartvuetypef.util;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -9,9 +9,6 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Omi on 1/18/16.
- */
 public class FrameManager {
 
     private static FrameManager sInstance = null;

@@ -1,4 +1,4 @@
-package main.java.com.vsu.smartvuetypef.util;
+package com.vsu.smartvuetypef.util;
 
 public class Face {
 	long time = -1;

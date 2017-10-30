@@ -1,4 +1,4 @@
-package main.java.com.vsu.smartvuetypef.util;
+package com.vsu.smartvuetypef.util;
 
 import android.content.Context;
 import android.util.Log;
@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 import java.util.Random;
 
 import main.java.com.vsu.smartvuetypef.R;
-import main.java.com.vsu.smartvuetypef.features.ZoomFragment;
+import com.vsu.smartvuetypef.features.ZoomFragment;
 
 public class Session {
     private static final String TAG = "Session";

@@ -1,4 +1,4 @@
-package main.java.com.vsu.smartvuetypef;
+package com.vsu.smartvuetypef;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,7 +9,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
-import android.widget.Toast;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
@@ -24,11 +23,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-import main.java.com.vsu.smartvuetypef.features.FlipFragment;
-import main.java.com.vsu.smartvuetypef.features.ZoomFragment;
-import main.java.com.vsu.smartvuetypef.model.FeatureDetection;
-import main.java.com.vsu.smartvuetypef.model.MyKalmanFilter;
-import main.java.com.vsu.smartvuetypef.view.InstructionsFragment;
+import com.vsu.smartvuetypef.features.FlipFragment;
+import com.vsu.smartvuetypef.features.ZoomFragment;
+import com.vsu.smartvuetypef.model.FeatureDetection;
+import com.vsu.smartvuetypef.features.InstructionsFragment;
+
+import main.java.com.vsu.smartvuetypef.R;
 
 public class SvActivity extends FeatureDetection implements InstructionsFragment.OnInstructionCompletedListener{
 	private static final String TAG = "SvActivity";

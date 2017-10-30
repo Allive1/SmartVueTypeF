@@ -1,4 +1,4 @@
-package main.java.com.vsu.smartvuetypef.model;
+package com.vsu.smartvuetypef.model;
 
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;

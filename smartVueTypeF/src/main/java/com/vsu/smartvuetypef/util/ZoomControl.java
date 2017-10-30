@@ -1,4 +1,4 @@
-package main.java.com.vsu.smartvuetypef.util;
+package com.vsu.smartvuetypef.util;
 
 import android.util.SparseArray;
 

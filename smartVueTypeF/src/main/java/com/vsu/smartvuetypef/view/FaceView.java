@@ -1,4 +1,4 @@
-package main.java.com.vsu.smartvuetypef.view;
+package com.vsu.smartvuetypef.view;
 
 public class FaceView{
 

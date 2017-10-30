@@ -1,4 +1,4 @@
-package main.java.com.vsu.smartvuetypef.model;
+package com.vsu.smartvuetypef.model;
 
 import org.opencv.core.Core;
 import org.opencv.core.Mat;

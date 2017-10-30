@@ -1,8 +1,8 @@
-package main.java.com.vsu.smartvuetypef.util;
+package com.vsu.smartvuetypef.util;
 
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.core.Mat;
-import main.java.com.vsu.smartvuetypef.util.FrameTransposeRunnable.TaskRunnableTransposeMethods;
+import com.vsu.smartvuetypef.util.FrameTransposeRunnable.TaskRunnableTransposeMethods;
 
 /**
  * Created by Omi on 1/18/16.

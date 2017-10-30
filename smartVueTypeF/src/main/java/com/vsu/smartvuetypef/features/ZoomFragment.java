@@ -1,4 +1,4 @@
-package main.java.com.vsu.smartvuetypef.features;
+package com.vsu.smartvuetypef.features;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -19,16 +19,17 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import main.java.com.vsu.smartvuetypef.R;
-import main.java.com.vsu.smartvuetypef.SvActivity;
-import main.java.com.vsu.smartvuetypef.util.Face;
-import main.java.com.vsu.smartvuetypef.util.Session;
-import main.java.com.vsu.smartvuetypef.util.ZoomControl;
+import com.vsu.smartvuetypef.SvActivity;
+import com.vsu.smartvuetypef.util.Face;
+import com.vsu.smartvuetypef.util.Session;
+import com.vsu.smartvuetypef.util.ZoomControl;
 
 public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedListener, SvActivity.OnFaceRecognizedListener {
     private static final String TAG = "ZoomFragment";
@@ -63,6 +64,7 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
 //    SampleHandler mySample = new SampleHandler();
     InstructionHandler myInstruct = new InstructionHandler(Looper.getMainLooper());
     ZoomHandler myZoom = new ZoomHandler(Looper.getMainLooper());
+    Button button;
 
     public ZoomFragment() {
         // Required empty public constructor
@@ -133,11 +135,32 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
                 "alpha", 1f, 0f);
         fadeIn.setDuration(1500);
         fadeOut.setDuration(1500);
-        startSampleSession();
 
         return view;
     }
+    public void clearPhase(){
+        new Handler(Looper.getMainLooper()).post(new Runnable() {
+            @Override
+            public void run() {
+                contentTextView.setTextSize(zoomController.getCurrentModeTextSize());
+                final AnimatorSet instructionSet = new AnimatorSet();
+                final AnimatorSet sampleSet = new AnimatorSet();
 
+                //Instruction Animation
+                instructionSet.addListener(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationStart(Animator animation) {
+                        // load instruction
+                        contentTextView.setText("");
+                    }
+
+                });
+
+                instructionSet.play(fadeOut).after(1000).after(fadeIn);
+                instructionSet.start();
+            }
+        });
+    }
     // Session Methods
     public void loadPhase() {
         new Handler(Looper.getMainLooper()).post(new Runnable() {
@@ -266,10 +289,12 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
 
     public void endSampleSession(){
         //Turn off switches
-
+        clearPhase();
+        contentActive = false;
         //Log results
 
         //Reset to interim state
+
     }
 
     //Record User Input
@@ -351,31 +376,6 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
         //sActivity.handleState(this, state, t);
     }
 
-    Handler s = new Handler(Looper.myLooper()){
-        @Override
-        public void handleMessage(Message msg){
-            //TextView content = (TextView) msg.obj;
-            ValueAnimator fadeIn = ObjectAnimator.ofFloat(mContentView,
-                    "alpha", 0f, 1f);
-            fadeIn.setDuration(1500);
-            AnimatorSet animatorSet = new AnimatorSet();
-
-            animatorSet.addListener(new AnimatorListenerAdapter() {
-                @Override
-                public void onAnimationStart(Animator animation) {
-                }
-
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                    stage = 2;
-                    Log.d(TAG, "Sample Phase: ready");
-                }
-            });
-            animatorSet.play(fadeIn).after(1000);
-            animatorSet.start();
-        }
-    };
-
     private class ZoomHandler extends Handler {
         ZoomHandler(Looper l) {
             super(l);
@@ -432,4 +432,29 @@ public class ZoomFragment extends Fragment implements ZoomControl.OnZoomChangedL
             animatorSet.start();
         }
     }
+
+    Handler s = new Handler(Looper.myLooper()){
+        @Override
+        public void handleMessage(Message msg){
+            //TextView content = (TextView) msg.obj;
+            ValueAnimator fadeIn = ObjectAnimator.ofFloat(mContentView,
+                    "alpha", 0f, 1f);
+            fadeIn.setDuration(1500);
+            AnimatorSet animatorSet = new AnimatorSet();
+
+            animatorSet.addListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationStart(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    stage = 2;
+                    Log.d(TAG, "Sample Phase: ready");
+                }
+            });
+            animatorSet.play(fadeIn).after(1000);
+            animatorSet.start();
+        }
+    };
 }

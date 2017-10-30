@@ -1,4 +1,4 @@
-package main.java.com.vsu.smartvuetypef;
+package com.vsu.smartvuetypef.util;
 
 import java.util.HashMap;
 

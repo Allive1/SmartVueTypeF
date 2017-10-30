@@ -2,41 +2,48 @@ apply plugin: 'com.android.model.application'
 
 model {
     android {
-        compileSdkVersion = 25
-        buildToolsVersion = "25.0.0"
+        compileSdkVersion 26
+        buildToolsVersion "26.0.2"
 
-        defaultConfig.with {
-            applicationId = "com.vsu.smartvuetypef"
-            minSdkVersion.apiLevel = 19
-            targetSdkVersion.apiLevel = 19
+        defaultConfig {
+            applicationId "com.vsu.smartvuetypef"
+            minSdkVersion.apiLevel 19
+            targetSdkVersion.apiLevel 19
+            versionCode 1
+            versionName "1.0"
+            buildConfigFields {
+                create() {
+                    type "int"
+                    name "VALUE"
+                    value "1"
+                }
+            }
         }
-    }
-
-
-    android.ndk {
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles.add(file("proguard-rules.pro"))
+            }
+        }
+        productFlavors {
+            create("flavor1") {
+                applicationId "com.app"
+            }
+        }
+        ndk {
             moduleName = "smartvue"
             CFlags.add("-DANDROID_NDK")
             ldLibs.add("android")
-        ldLibs.add("opencv2")
-        ldLibs.add("log")
+            ldLibs.add("opencv2")
+            ldLibs.add("log")
             cppFlags.add("-I${file("src/main/jni/prebuilts/include")}".toString())
         }
-        android.buildTypes {
-            release {
-                minifyEnabled = false
-                proguardFiles.add(file('proguard-android.pro'))
-            }
-        }
-        android.productFlavors {
-            create("flavor1") {
-                applicationId = "com.smartvue"
-            }
-        }
-    android.sources {
-        main {
-            java {
-                source {
-                    srcDir 'src'
+        sources {
+            main {
+                java {
+                    source {
+                        srcDir 'src'
+                    }
                 }
             }
         }
@@ -46,8 +53,7 @@ model {
 dependencies {
     compile project(':opencv')
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.parse.bolts:bolts-android:1.2.1'
-    compile 'com.parse:parse-android:1.10.3'
-    compile 'com.android.support:support-v4:25.0.0'
-    compile 'com.android.support:support-v13:25.0.0'
+//        compile 'com.android.support:support-compat:26.0.2'
+        compile 'com.android.support:support-v13:26.1.0'
+    compile 'com.android.support:appcompat-v7:26.1.0'
 }

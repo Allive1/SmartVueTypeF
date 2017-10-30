@@ -1,4 +1,4 @@
-package main.java.com.vsu.smartvuetypef.view;
+package com.vsu.smartvuetypef.view;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
