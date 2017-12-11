@@ -1,4 +1,4 @@
-package com.vsu.smartvuetypef.features;
+package com.vsu.smartvuetypef.model;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -23,76 +23,69 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
-import main.java.com.vsu.smartvuetypef.R;
 import com.vsu.smartvuetypef.SvActivity;
-import com.vsu.smartvuetypef.model.SVFragment;
 import com.vsu.smartvuetypef.util.Face;
 import com.vsu.smartvuetypef.util.Session;
 import com.vsu.smartvuetypef.util.ZoomControl;
 
-public class ZoomFragment extends SVFragment implements ZoomControl.OnZoomChangedListener, SvActivity.OnFaceRecognizedListener {
-    private static final String TAG = "ZoomFragment";
+import java.util.ArrayList;
+
+import main.java.com.vsu.smartvuetypef.R;
+
+public class SVFragment extends Fragment{
+    private static final String TAG = "SVFragment";
     public static final int JAVA_DETECTOR = 0;
     public static final int NATIVE_DETECTOR = 1;
-    private static boolean zoomSwitch = true;
+    public Session session;
+
+    public int maxWidth = 720, maxHeight = 576, faceSize, initZoom = -1, phaseResult, totalPhases = 1;
 
     static int stage = 0;
-    Face lkgFace = new Face();
+    public Face lkgFace = new Face();
 
-    boolean faceCheck, sampleReady = false, contentActive = false, facialSwitch = true;
+    public boolean faceCheck, sampleReady = false, contentActive = false, facialSwitch = true;
 
-    Context mContext;
-    TextView mSampleView, contentTextView, mInstrTextView;
-    TextView mContentView;
+    public Context mContext;
+    public TextView mSampleView, contentTextView, mInstrTextView, mContentView;
 
-    public static ZoomControl zoomController;
-    View showView, hideView;
-    Animation in, out;
-    ValueAnimator instrAnim;
-    ArrayList<Face> faceList = new ArrayList<Face>();
-    static boolean sampleSwitch = false;
+    public View showView, hideView;
+    public Animation in, out;
+    public ValueAnimator instrAnim;
+    public static boolean sampleSwitch = false;
 
-    static AnimatorSet phaseIn = new AnimatorSet();
-    CountDownTimer t;
-    Session mySession;
-    static ValueAnimator fadeIn, fadeOut;
-    ToastHandler myToast = new ToastHandler(Looper.getMainLooper());
-//    SampleHandler mySample = new SampleHandler();
-    InstructionHandler myInstruct = new InstructionHandler(Looper.getMainLooper());
-    ZoomHandler myZoom = new ZoomHandler(Looper.getMainLooper());
-    Button button;
+    public static AnimatorSet phaseIn = new AnimatorSet();
+    public static ValueAnimator fadeIn, fadeOut;
+    public ToastHandler myToast = new ToastHandler(Looper.getMainLooper());
+    public InstructionHandler myInstruct = new InstructionHandler(Looper.getMainLooper());
+    public Button button;
 
-    public ZoomFragment() {
-        super();
+    public SVFragment() {
         // Required empty public constructor
-        Log.d(TAG, "Zoom Constructor");
+        Log.d(TAG, "SV Constructor");
+
+        phaseIn.play(instrAnim);
+
+        String[] mDetectorName = new String[2];
+        mDetectorName[NATIVE_DETECTOR] = "Native (tracking)";
+        mDetectorName[JAVA_DETECTOR] = "Java";
+
+        in = new AlphaAnimation(0.0f, 1.0f);
+        in.setDuration(3000);
+
+        out = new AlphaAnimation(1.0f, 0.0f);
+        out.setDuration(3000);
+
+        faceCheck = true;
+        faceSize = 0;
+
+        session = new Session(this.getContext());
     }
 
     // Fragment Method
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        Log.d(TAG, "Attached");
         mContext = context;
-        session = new Session(context);
-
-        Bundle b = getArguments();
-        int c = b.getInt("calibration_face");
-
-        if (c > 0) {
-            session.setCalibrationFace(c);
-            //zoomController.runZoomLevelCorrect(c);
-        } else {
-            session.setCalibrationFace(170);
-            zoomController.setMode(1);
-        }
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
     }
 
     @Override
@@ -107,21 +100,18 @@ public class ZoomFragment extends SVFragment implements ZoomControl.OnZoomChange
         // Initialize text view
         contentTextView = (TextView) view.findViewById(R.id.sample_text_view);
         fadeIn = ObjectAnimator.ofFloat(contentTextView,
-                "alpha", 0f, 1f);
+                "alpha", 0f, 1f).setDuration(1500);
         fadeOut = ObjectAnimator.ofFloat(contentTextView,
-                "alpha", 1f, 0f);
-        fadeIn.setDuration(1500);
-        fadeOut.setDuration(1500);
+                "alpha", 1f, 0f).setDuration(1500);
 
         return view;
     }
+
     public void clearPhase(){
         new Handler(Looper.getMainLooper()).post(new Runnable() {
             @Override
             public void run() {
-                contentTextView.setTextSize(zoomController.getCurrentModeTextSize());
                 final AnimatorSet instructionSet = new AnimatorSet();
-                final AnimatorSet sampleSet = new AnimatorSet();
 
                 //Instruction Animation
                 instructionSet.addListener(new AnimatorListenerAdapter() {
@@ -130,7 +120,6 @@ public class ZoomFragment extends SVFragment implements ZoomControl.OnZoomChange
                         // load instruction
                         contentTextView.setText("");
                     }
-
                 });
 
                 instructionSet.play(fadeOut).after(1000).after(fadeIn);
@@ -138,12 +127,11 @@ public class ZoomFragment extends SVFragment implements ZoomControl.OnZoomChange
             }
         });
     }
-    // Session Methods
+
     public void loadPhase() {
         new Handler(Looper.getMainLooper()).post(new Runnable() {
             @Override
             public void run() {
-                contentTextView.setTextSize(zoomController.getCurrentModeTextSize());
                 final AnimatorSet instructionSet = new AnimatorSet();
                 final AnimatorSet sampleSet = new AnimatorSet();
 
@@ -217,48 +205,6 @@ public class ZoomFragment extends SVFragment implements ZoomControl.OnZoomChange
         });
     }
 
-    public void playPhaseResult() {
-        new Handler(Looper.getMainLooper()).post(new Runnable() {
-            @Override
-            public void run() {
-                final AnimatorSet endPhaseSet = new AnimatorSet();
-//
-//                instructionSet.addListener(new AnimatorListenerAdapter() {
-//                    @Override
-//                    public void onAnimationStart(Animator animation) {
-//                        // load instruction
-//                        loadInstruction();
-//                    }
-//
-//                    @Override
-//                    public void onAnimationEnd(Animator animation) {
-//                        sampleSet.play(fadeIn);
-//                        sampleSet.start();
-//                        Log.d(TAG, "Sample Phase: ready");
-//                    }
-//                });
-//
-//                sampleSet.addListener(new AnimatorListenerAdapter() {
-//                    @Override
-//                    public void onAnimationStart(Animator animation) {
-//                        //load sample
-//                        loadSample();
-//                    }
-//
-//                    @Override
-//                    public void onAnimationEnd(Animator animation) {
-//                        stage = 2;
-//                        sampleSwitch = true;
-//                        Log.d(TAG, "Sample Phase: ready");
-//                    }
-//                });
-//
-//                instructionSet.play(fadeOut).after(1000).after(fadeIn);
-//                instructionSet.start();
-            }
-        });
-    }
-
     public void startSampleSession() {
         loadPhase();
         contentActive = true;
@@ -268,104 +214,10 @@ public class ZoomFragment extends SVFragment implements ZoomControl.OnZoomChange
         //Turn off switches
         clearPhase();
         contentActive = false;
-        //Log results
-
-        //Reset to interim state
-
-    }
-
-    //Record User Input
-    public void checkForZoomChange(int face) {
-        if (session.getCalibrationFace() > 0 && contentActive) {
-            if (facialSwitch)
-                zoomController.runZoomLevelCorrect(face);
-        }
-    }
-
-    public boolean zoomInstructionCheck(int recognizedLevel) {
-        boolean result;
-        CharSequence response;
-        Message msg = new Message();
-
-        // check recognized level against the expected level
-        if (recognizedLevel == session.getExpectedMode()) {
-            result = true;
-            response = "User Success";
-            // Confirm success
-            contentActive = false;
-            msg.obj = response;
-            myZoom.handleMessage(msg);
-        }
-        // else L register a fail
-        else {
-            result = false;
-            contentActive = false;
-            response = "User Failure";
-            msg.obj = response;
-            myZoom.handleMessage(msg);
-        }
-        facialSwitch = false;
-        return result;
-    }
-
-    public void onZoomChanged(int position) {
-        // If view is available
-        if (contentTextView.getVisibility() == View.VISIBLE) {
-            // Update zoom
-            if (sampleSwitch) {
-                myZoom.sendEmptyMessage(0);
-                boolean result = zoomInstructionCheck(zoomController.getCurrentMode());
-                if (result) {
-                    endSampleSession();
-                } else {
-                    handleState(0);
-                }
-//                sampleSwitch = false;
-//                if (session.getExpectedMode() == zoomController.getCurrentMode())
-//                    myToast.sendEmptyMessage(1);
-//                else
-//                    myToast.sendEmptyMessage(0);
-//                myToast.post(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        final AnimatorSet sessionFinale = new AnimatorSet();
-//                        sessionFinale.addListener(new AnimatorListenerAdapter() {
-//                            @Override
-//                            public void onAnimationStart(Animator animation){
-//                                contentTextView.setText("Phase Complete\n\nPrepare for the next sample");
-//                            }
-//
-//                            @Override
-//                            public void onAnimationEnd(Animator animation){
-//                                //session.start();
-//                            }
-//                        });
-//                    }
-//                });
-            }
-        } else {
-            Log.d(TAG, "Zoom attempt with Sample Text View invisible");
-        }
     }
 
     public void handleState(int state) {
         Context t = this.getActivity();
-        //sActivity.handleState(this, state, t);
-    }
-
-    private class ZoomHandler extends Handler {
-        ZoomHandler(Looper l) {
-            super(l);
-        }
-
-        public void handleMessage(Message msg) {
-            // Set Mode level
-            Log.d(TAG, "Zoom Handler is running");
-            contentTextView.setText(msg.obj.toString());
-            contentTextView.setTextSize(zoomController.getCurrentModeTextSize());
-            //Disable zoom handler
-            zoomSwitch = false;
-        }
     }
 
     private class ToastHandler extends Handler {

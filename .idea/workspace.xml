@@ -13,195 +13,12 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da5b2249-8db7-4328-9e7c-d64164959109" name="Default" comment="Refactor with package and gradle settings">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_arch_core_common_1_0_0_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_arch_lifecycle_common_1_0_0_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_arch_lifecycle_runtime_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_animated_vector_drawable_26_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_animated_vector_drawable_26_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_appcompat_v7_26_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_appcompat_v7_26_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_annotations_26_0_2_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_annotations_26_1_0_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_compat_26_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_compat_26_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_ui_26_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_ui_26_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_utils_26_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_utils_26_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_fragment_26_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_fragment_26_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_media_compat_26_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_media_compat_26_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_v13_26_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_v4_26_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_v4_26_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_vector_drawable_26_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_vector_drawable_26_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_hamcrest_hamcrest_core_1_3_jar.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Parse_1_10_3_Parse_1_10_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/bolts_android_1_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/bolts_android_1_2_1_bolts_android_1_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/parse_android_1_10_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v13_25_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Parse-1.10.3/Parse-1.10.3.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Parse-1.10.3/Parse-1.10.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Parse-1.10.3/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bolts-android-1.2.1/bolts-android-1.2.1.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bolts-android-1.2.1/bolts-android-1.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bolts-android-1.2.1/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/generated/source/buildConfig/androidTest/flavor1/debug/com/smartvue/test/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/arm64-v8a/gdb.setup" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/arm64-v8a/gdbserver" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/armeabi-v7a/gdb.setup" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/armeabi-v7a/gdbserver" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/armeabi/gdb.setup" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/binaries/debug/flavor1/lib/armeabi/gdbserver" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/SplashScreen$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/SplashScreen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/SvActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/SvActivity$OnFaceRecognizedListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/SvActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/CrossfadeActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/CrossfadeActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/FlipFragment$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/FlipFragment$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/FlipFragment$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/FlipFragment$FlipPagerAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/FlipFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$1$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment$ToastHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/features/ZoomFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/model/FeatureDetection$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/model/FeatureDetection$CameraWorker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/model/FeatureDetection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/model/MyKalmanFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/util/ZoomControl$Mode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/util/ZoomControl$OnZoomChangedListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/util/ZoomControl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/view/InstructionsFragment$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/view/InstructionsFragment$OnInstructionCompletedListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/classes/flavor1/debug/main/java/com/vsu/smartvuetypef/view/InstructionsFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/color/abc_background_cache_hint_selector_material_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/color/abc_background_cache_hint_selector_material_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-az-rAZ/values-az-rAZ.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-bn-rBD/values-bn-rBD.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-et-rEE/values-et-rEE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-eu-rES/values-eu-rES.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-gl-rES/values-gl-rES.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-gu-rIN/values-gu-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-hy-rAM/values-hy-rAM.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-is-rIS/values-is-rIS.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-ka-rGE/values-ka-rGE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-kk-rKZ/values-kk-rKZ.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-km-rKH/values-km-rKH.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-kn-rIN/values-kn-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-ky-rKG/values-ky-rKG.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-lo-rLA/values-lo-rLA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-mk-rMK/values-mk-rMK.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-ml-rIN/values-ml-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-mn-rMN/values-mn-rMN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-mr-rIN/values-mr-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-ms-rMY/values-ms-rMY.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-my-rMM/values-my-rMM.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-ne-rNP/values-ne-rNP.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-pa-rIN/values-pa-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-si-rLK/values-si-rLK.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-sq-rAL/values-sq-rAL.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-ta-rIN/values-ta-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-te-rIN/values-te-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-ur-rPK/values-ur-rPK.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-uz-rUZ/values-uz-rUZ.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/ParseFace.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/Phase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/Session.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/view/InstructionsFragment.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/InstructionsFragment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/view/ScreenSlidePageFragment.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ScreenSlidePageFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/opencv/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/intermediates/classes/debug/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class" afterPath="$PROJECT_DIR$/opencv/build/intermediates/classes/debug/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/intermediates/classes/release/org/opencv/R$attr.class" afterPath="$PROJECT_DIR$/opencv/build/intermediates/classes/release/org/opencv/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/intermediates/classes/release/org/opencv/R$id.class" afterPath="$PROJECT_DIR$/opencv/build/intermediates/classes/release/org/opencv/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/intermediates/classes/release/org/opencv/R$styleable.class" afterPath="$PROJECT_DIR$/opencv/build/intermediates/classes/release/org/opencv/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/intermediates/classes/release/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class" afterPath="$PROJECT_DIR$/opencv/build/intermediates/classes/release/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/outputs/aar/opencv-release.aar" afterPath="$PROJECT_DIR$/opencv/build/outputs/aar/opencv-release.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/exploded-aar/SmartVueTypeF/opencv/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/exploded-aar/SmartVueTypeF/opencv/unspecified/jars/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/resources-flavor1-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/resources-flavor1-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/resources-flavor1-debug.ap_" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/resources-flavor1-debug.ap_" />
+    <list default="true" id="da5b2249-8db7-4328-9e7c-d64164959109" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/SVFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build.gradle" afterPath="$PROJECT_DIR$/opencv/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/generated/source/aidl/debug/org/opencv/engine/OpenCVEngineInterface.java" afterPath="$PROJECT_DIR$/opencv/build/generated/source/aidl/debug/org/opencv/engine/OpenCVEngineInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/generated/source/aidl/release/org/opencv/engine/OpenCVEngineInterface.java" afterPath="$PROJECT_DIR$/opencv/build/generated/source/aidl/release/org/opencv/engine/OpenCVEngineInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/generated/source/r/release/org/opencv/R.java" afterPath="$PROJECT_DIR$/opencv/build/generated/source/r/release/org/opencv/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/build/intermediates/bundles/release/R.txt" afterPath="$PROJECT_DIR$/opencv/build/intermediates/bundles/release/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencv/opencv.iml" afterPath="$PROJECT_DIR$/opencv/opencv.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build.gradle" afterPath="$PROJECT_DIR$/smartVueTypeF/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/generated/source/buildConfig/flavor1/debug/main/java/com/vsu/smartvuetypef/BuildConfig.java" afterPath="$PROJECT_DIR$/smartVueTypeF/build/generated/source/buildConfig/flavor1/debug/main/java/com/vsu/smartvuetypef/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/generated/source/r/flavor1/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/smartVueTypeF/build/generated/source/r/flavor1/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/generated/source/r/flavor1/debug/main/java/com/vsu/smartvuetypef/R.java" afterPath="$PROJECT_DIR$/smartVueTypeF/build/generated/source/r/flavor1/debug/main/java/com/vsu/smartvuetypef/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/generated/source/r/flavor1/debug/org/opencv/R.java" afterPath="$PROJECT_DIR$/smartVueTypeF/build/generated/source/r/flavor1/debug/org/opencv/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/exploded-aar/SmartVueTypeF/opencv/unspecified/R.txt" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/exploded-aar/SmartVueTypeF/opencv/unspecified/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/manifest/androidTest/flavor1/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/manifest/androidTest/flavor1/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/manifests/full/flavor1/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/manifests/full/flavor1/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/abc_action_mode_close_item_material.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/abc_action_mode_close_item_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/abc_activity_chooser_view_list_item.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/abc_activity_chooser_view_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/abc_alert_dialog_material.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/abc_alert_dialog_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/abc_select_dialog_material.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/abc_select_dialog_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_media_action.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_media_action.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_media_cancel_action.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_media_cancel_action.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_template_big_media.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_template_big_media.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_template_big_media_narrow.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_template_big_media_narrow.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_template_media.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_template_media.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_template_part_chronometer.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_template_part_chronometer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_template_part_time.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/layout/notification_template_part_time.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-es-rUS/values-es-rUS.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-es-rUS/values-es-rUS.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-es/values-es.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-es/values-es.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-fa/values-fa.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-fa/values-fa.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-ro/values-ro.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-ro/values-ro.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-sk/values-sk.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-sk/values-sk.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-v11/values-v11.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-v11/values-v11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-v14/values-v14.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-v14/values-v14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-v21/values-v21.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values-v21/values-v21.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values/values.xml" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/res/merged/flavor1/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/symbols/flavor1/debug/R.txt" afterPath="$PROJECT_DIR$/smartVueTypeF/build/intermediates/symbols/flavor1/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/build/outputs/logs/manifest-merger-flavor1-debug-report.txt" afterPath="$PROJECT_DIR$/smartVueTypeF/build/outputs/logs/manifest-merger-flavor1-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/smartVueTypeF.iml" afterPath="$PROJECT_DIR$/smartVueTypeF/smartVueTypeF.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/SplashScreen.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/SplashScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/SvActivity.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/SvActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/FlipFragment.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/FlipFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ScreenSlidePageFragment.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ScreenSlidePageFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ZoomFragment.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ZoomFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/FeatureDetection.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/FeatureDetection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/MyKalmanFilter.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/MyKalmanFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Face.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Face.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/FaceFinder.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/FaceFinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/FrameManager.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/FrameManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/FrameTask.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/FrameTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/FrameTransposeRunnable.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/FrameTransposeRunnable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Session.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Session.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Zoom.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Zoom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/ZoomControl.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/ZoomControl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/view/FaceView.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/view/FaceView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/view/FlipPage.java" afterPath="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/view/FlipPage.java" />
     </list>
     <ignored path="SmartVueTypeF.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -267,36 +84,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="ZoomFragment.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ZoomFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ZoomFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            <state relative-caret-position="325">
+              <caret line="106" column="31" lean-forward="true" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="31" />
               <folding>
-                <element signature="e#1901#1907#0" expanded="true" />
-                <element signature="method#ZoomFragment#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="method#onAttach#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="method#onStart#0;class#ZoomFragment#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3023#3024#0" expanded="true" />
+                <element signature="e#3054#3055#0" expanded="true" />
                 <element signature="method#clearPhase#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#loadPhase#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="class#5868:6391" expanded="false" />
-                <element signature="method#onAnimationStart#0;class#5868:6391" expanded="false" />
-                <element signature="method#onAnimationEnd#0;class#5868:6391" expanded="false" />
-                <element signature="class#6472:6930" expanded="false" />
-                <element signature="method#onAnimationEnd#0;class#6472:6930" expanded="false" />
+                <element signature="class#5190:5713" expanded="false" />
+                <element signature="method#onAnimationStart#0;class#5190:5713" expanded="false" />
+                <element signature="method#onAnimationEnd#0;class#5190:5713" expanded="false" />
+                <element signature="class#5794:6252" expanded="false" />
+                <element signature="method#onAnimationEnd#0;class#5794:6252" expanded="false" />
                 <element signature="method#displayResampleMessage#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="class#7634:8072" expanded="false" />
-                <element signature="method#onAnimationStart#0;class#7634:8072" expanded="false" />
-                <element signature="method#onAnimationEnd#0;class#7634:8072" expanded="false" />
+                <element signature="class#6956:7394" expanded="false" />
+                <element signature="method#onAnimationStart#0;class#6956:7394" expanded="false" />
+                <element signature="method#onAnimationEnd#0;class#6956:7394" expanded="false" />
                 <element signature="method#playPhaseResult#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="e#8446#8448#0" expanded="false" />
+                <element signature="e#7768#7770#0" expanded="false" />
                 <element signature="method#startSampleSession#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#endSampleSession#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="e#10009#10022#0" expanded="false" />
+                <element signature="e#9331#9344#0" expanded="false" />
                 <element signature="method#checkForZoomChange#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#zoomInstructionCheck#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#onZoomChanged#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="e#11569#11608#0" expanded="false" />
+                <element signature="e#10891#10930#0" expanded="false" />
                 <element signature="method#handleState#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#handleMessage#0;class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
@@ -304,77 +120,55 @@
                 <element signature="method#handleMessage#0;class#ToastHandler#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
                 <element signature="method#handleMessage#0;class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
-                <element signature="class#14820:15662" expanded="false" />
-                <element signature="method#handleMessage#0;class#14820:15662" expanded="false" />
-                <element signature="class#15213:15561" expanded="false" />
-                <element signature="method#onAnimationStart#0;class#15213:15561" expanded="false" />
-                <element signature="method#onAnimationEnd#0;class#15213:15561" expanded="false" />
+                <element signature="class#14142:14984" expanded="false" />
+                <element signature="method#handleMessage#0;class#14142:14984" expanded="false" />
+                <element signature="class#14535:14883" expanded="false" />
+                <element signature="method#onAnimationStart#0;class#14535:14883" expanded="false" />
+                <element signature="method#onAnimationEnd#0;class#14535:14883" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Zoom.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Zoom.java">
+      <file leaf-file-name="SVFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/SVFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FaceView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/view/FaceView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Session.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Session.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="161" column="27" lean-forward="false" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
+            <state relative-caret-position="25">
+              <caret line="75" column="30" lean-forward="false" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#chooseSample#0;class#Session#0" expanded="false" />
-                <element signature="method#chooseInstruction#0;class#Session#0" expanded="false" />
-                <element signature="method#getInstruction#0;class#Session#0" expanded="false" />
+                <element signature="method#clearPhase#0;class#SVFragment#0" expanded="false" />
+                <element signature="e#3613#4246#0" expanded="true" />
+                <element signature="e#3838#4107#0" expanded="true" />
+                <element signature="e#4106#4107#0" expanded="true" />
+                <element signature="e#4245#4246#0" expanded="true" />
+                <element signature="method#loadPhase#0;class#SVFragment#0" expanded="false" />
+                <element signature="e#4335#5830#0" expanded="true" />
+                <element signature="class#4629:5152" expanded="false" />
+                <element signature="method#onAnimationStart#0;class#4629:5152" expanded="false" />
+                <element signature="method#onAnimationEnd#0;class#4629:5152" expanded="false" />
+                <element signature="class#5233:5691" expanded="false" />
+                <element signature="method#onAnimationEnd#0;class#5233:5691" expanded="false" />
+                <element signature="e#5829#5830#0" expanded="true" />
+                <element signature="method#displayResampleMessage#0;class#SVFragment#0" expanded="false" />
+                <element signature="e#6129#6974#0" expanded="true" />
+                <element signature="class#6395:6833" expanded="false" />
+                <element signature="method#onAnimationStart#0;class#6395:6833" expanded="false" />
+                <element signature="method#onAnimationEnd#0;class#6395:6833" expanded="false" />
+                <element signature="e#6973#6974#0" expanded="true" />
+                <element signature="method#startSampleSession#0;class#SVFragment#0" expanded="false" />
+                <element signature="method#endSampleSession#0;class#SVFragment#0" expanded="false" />
+                <element signature="class#ToastHandler#0;class#SVFragment#0" expanded="false" />
+                <element signature="method#handleMessage#0;class#ToastHandler#0;class#SVFragment#0" expanded="false" />
+                <element signature="class#InstructionHandler#0;class#SVFragment#0" expanded="false" />
+                <element signature="method#handleMessage#0;class#InstructionHandler#0;class#SVFragment#0" expanded="false" />
+                <element signature="e#8398#8672#0" expanded="true" />
+                <element signature="e#8671#8672#0" expanded="true" />
+                <element signature="class#8745:9587" expanded="false" />
+                <element signature="method#handleMessage#0;class#8745:9587" expanded="false" />
+                <element signature="class#9138:9486" expanded="false" />
+                <element signature="method#onAnimationStart#0;class#9138:9486" expanded="false" />
+                <element signature="method#onAnimationEnd#0;class#9138:9486" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InstructionsFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/InstructionsFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScreenSlidePageFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ScreenSlidePageFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="30" column="3" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartVueTypeF/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -393,7 +187,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\Omari\Documents\gradle-2.14.1-bin\gradle-2.14.1" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -4513,71 +4307,71 @@
               <option name="name" value="Parse-1.10.3" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/ant-1.9.6.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/ant-launcher-1.9.6.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-base-services-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-base-services-groovy-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-cli-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-core-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-docs-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-installation-beacon-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-jvm-services-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-launcher-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-logging-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-messaging-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-model-core-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-model-groovy-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-native-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-open-api-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-process-services-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-resources-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-tooling-api-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-ui-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/gradle-wrapper-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/groovy-all-2.4.4.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-announce-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-antlr-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-build-comparison-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-build-init-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-code-quality-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-dependency-management-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-diagnostics-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-ear-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-ide-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-ide-native-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-ide-play-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-ivy-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-jacoco-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-javascript-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-jetty-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-language-groovy-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-language-java-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-language-jvm-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-language-native-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-language-scala-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-maven-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-osgi-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-platform-base-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-platform-jvm-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-platform-native-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-platform-play-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-plugin-development-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-plugin-use-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-plugins-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-publish-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-reporting-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-resources-http-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-resources-s3-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-resources-sftp-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-scala-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-signing-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-sonar-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-test-kit-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-testing-base-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-testing-jvm-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-testing-native-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/gradle-tooling-api-builders-2.14.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/ant-1.9.6.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-base-services-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-base-services-groovy-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-cli-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-core-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-docs-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-installation-beacon-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-jvm-services-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-launcher-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-logging-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-messaging-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-model-core-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-model-groovy-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-native-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-open-api-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-process-services-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-resources-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-tooling-api-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-ui-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/gradle-wrapper-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/groovy-all-2.4.4.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-announce-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-antlr-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-build-comparison-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-build-init-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-code-quality-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-dependency-management-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-diagnostics-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-ear-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-ide-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-ide-native-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-ide-play-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-ivy-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-jacoco-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-javascript-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-jetty-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-language-groovy-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-language-java-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-language-jvm-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-language-native-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-language-scala-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-maven-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-osgi-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-platform-base-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-platform-jvm-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-platform-native-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-platform-play-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-plugin-development-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-plugin-use-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-plugins-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-publish-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-reporting-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-resources-http-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-resources-s3-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-resources-sftp-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-scala-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-signing-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-sonar-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-test-kit-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-testing-base-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-testing-jvm-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-testing-native-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/gradle-tooling-api-builders-2.14.1.jar" />
+                  <option value="$USER_HOME$/Documents/gradle-2.14.1-bin/gradle-2.14.1/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -4615,16 +4409,18 @@
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/Phase.java" />
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/MyKalmanFilter.java" />
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/FeatureDetection.java" />
-        <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ScreenSlidePageFragment.java" />
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/SvActivity.java" />
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/FrameTask.java" />
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/SplashScreen.java" />
         <option value="$PROJECT_DIR$/smartVueTypeF/build.gradle" />
-        <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ZoomFragment.java" />
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/FlipFragment.java" />
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Zoom.java" />
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Session.java" />
         <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/InstructionsFragment.java" />
+        <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ScreenSlidePageFragment.java" />
+        <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/ZoomFragment.java" />
+        <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/SVFragment.java" />
+        <option value="$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ZoomFragment.java" />
       </list>
     </option>
   </component>
@@ -4663,7 +4459,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -4708,6 +4503,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -4817,6 +4613,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartVueTypeF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartVueTypeF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartVueTypeF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartvuetypef" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="features" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -4841,6 +4671,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vsu.smartvuetypef.model" />
       <recent name="com.vsu.smartvuetypef.features" />
     </key>
   </component>
@@ -4927,7 +4758,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509355539888" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513036119494" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -4975,7 +4806,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509355539888" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513036119494" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -5016,27 +4847,6 @@
       <setting name="params" value="" />
       <setting name="workDir" value="file://$PROJECT_DIR$" />
       <setting name="debug" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -5167,7 +4977,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509355539890" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513036119497" />
       </method>
     </configuration>
     <configuration default="false" name="Build" type="GradleRunConfiguration" factoryName="Gradle">
@@ -5345,16 +5155,23 @@
       <option name="project" value="LOCAL" />
       <updated>1502681451393</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactor with package and gradle settings">
+      <created>1509355565195</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1509355565195</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32699168" sideWeight="0.4210811" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3259861" sideWeight="0.4210811" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -5363,15 +5180,15 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32580262" sideWeight="0.495685" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996207" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34007135" sideWeight="0.46548003" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22972973" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22932331" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955772" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945416" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39925835" sideWeight="0.72" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -5416,26 +5233,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/SvActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="initializer##0;class#SvActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#SvActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#SvActivity#0" expanded="false" />
-            <element signature="e#4719#4777#0" expanded="false" />
-            <element signature="e#5061#5123#0" expanded="false" />
-            <element signature="e#5340#5405#0" expanded="false" />
-            <element signature="e#5528#5596#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#SvActivity#0" expanded="false" />
-            <element signature="method#onResume#0;class#SvActivity#0" expanded="false" />
-            <element signature="e#8412#8436#0" expanded="false" />
-            <element signature="class#OnFaceRecognizedListener#0;class#SvActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/InstructionsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -5527,13 +5324,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parse-1.10.3/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Parse-1.10.3/build.gradle" />
     <entry file="file://$PROJECT_DIR$/opencv/proguard-rules.pro">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -5548,13 +5339,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bolts-android-1.2.1/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bolts-android-1.2.1/build.gradle" />
     <entry file="file://$PROJECT_DIR$/opencv/src/test/java/com/opencv/ExampleUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -5563,41 +5348,40 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/res/layout/fragment_sv.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartVueTypeF/build/generated/source/r/flavor1/debug/main/java/com/vsu/smartvuetypef/R.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="1939" column="32" lean-forward="false" selection-start-line="1939" selection-start-column="32" selection-end-line="1939" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/res/layout/feature_view.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/res/layout/feature_view.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
@@ -5608,20 +5392,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/res/layout/sample_content.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/opencv/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
           <caret line="26" column="52" lean-forward="false" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5629,7 +5412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5637,7 +5419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="69" lean-forward="false" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5645,7 +5426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5653,7 +5433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5661,7 +5440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5669,7 +5447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5677,39 +5454,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/ParseFace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/Phase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-500">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/ParseFace.java" />
+    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/Phase.java" />
+    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/Session.java" />
     <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/MyKalmanFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5717,7 +5471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-900">
           <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5725,7 +5478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5733,9 +5485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -5743,19 +5492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-          <folding>
-            <element signature="initializer##0;class#SvActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#SvActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#SvActivity#0" expanded="false" />
-            <element signature="e#4719#4777#0" expanded="false" />
-            <element signature="e#5061#5123#0" expanded="false" />
-            <element signature="e#5340#5405#0" expanded="false" />
-            <element signature="e#5528#5596#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#SvActivity#0" expanded="false" />
-            <element signature="method#onResume#0;class#SvActivity#0" expanded="false" />
-            <element signature="e#8412#8436#0" expanded="false" />
-            <element signature="class#OnFaceRecognizedListener#0;class#SvActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -5763,25 +5499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="docComment;class#FrameTransposeRunnable#0" expanded="false" />
-            <element signature="class#TaskRunnableTransposeMethods#0;class#FrameTransposeRunnable#0" expanded="false" />
-            <element signature="docComment;method#setFrameTransposeThread#0;class#TaskRunnableTransposeMethods#0;class#FrameTransposeRunnable#0" expanded="false" />
-            <element signature="docComment;method#handleTransposeState#0;class#TaskRunnableTransposeMethods#0;class#FrameTransposeRunnable#0" expanded="false" />
-            <element signature="docComment;method#getTargetWidth#0;class#TaskRunnableTransposeMethods#0;class#FrameTransposeRunnable#0" expanded="false" />
-            <element signature="docComment;method#getTargetHeight#0;class#TaskRunnableTransposeMethods#0;class#FrameTransposeRunnable#0" expanded="false" />
-            <element signature="docComment;method#setImage#0;class#TaskRunnableTransposeMethods#0;class#FrameTransposeRunnable#0" expanded="false" />
-            <element signature="method#run#0;class#FrameTransposeRunnable#0" expanded="false" />
-            <element signature="e#2660#2710#0" expanded="false" />
-            <element signature="e#3244#3300#0" expanded="false" />
-            <element signature="e#3685#3743#0" expanded="false" />
-            <element signature="e#4226#4241#0" expanded="false" />
-            <element signature="e#4568#4622#0" expanded="false" />
-            <element signature="e#4893#4895#0" expanded="false" />
-            <element signature="e#5507#5567#0" expanded="false" />
-            <element signature="e#7728#7784#0" expanded="false" />
-            <element signature="e#8446#8503#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -5789,7 +5506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5798,62 +5514,9 @@
         <state relative-caret-position="300">
           <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
-            <element signature="e#6705#6727#0" expanded="true" />
-            <element signature="e#6738#6758#0" expanded="true" />
+            <element signature="e#6705#6727#0" expanded="false" />
+            <element signature="e#6738#6758#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ZoomFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding>
-            <element signature="e#1901#1907#0" expanded="true" />
-            <element signature="method#ZoomFragment#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#onAttach#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#onStart#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#clearPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#loadPhase#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#5868:6391" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#5868:6391" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#5868:6391" expanded="false" />
-            <element signature="class#6472:6930" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#6472:6930" expanded="false" />
-            <element signature="method#displayResampleMessage#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#7634:8072" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#7634:8072" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#7634:8072" expanded="false" />
-            <element signature="method#playPhaseResult#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#8446#8448#0" expanded="false" />
-            <element signature="method#startSampleSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#endSampleSession#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#10009#10022#0" expanded="false" />
-            <element signature="method#checkForZoomChange#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#zoomInstructionCheck#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#onZoomChanged#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="e#11569#11608#0" expanded="false" />
-            <element signature="method#handleState#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#handleMessage#0;class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#ToastHandler#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#handleMessage#0;class#ToastHandler#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="method#handleMessage#0;class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
-            <element signature="class#14820:15662" expanded="false" />
-            <element signature="method#handleMessage#0;class#14820:15662" expanded="false" />
-            <element signature="class#15213:15561" expanded="false" />
-            <element signature="method#onAnimationStart#0;class#15213:15561" expanded="false" />
-            <element signature="method#onAnimationEnd#0;class#15213:15561" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Zoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5861,44 +5524,126 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartVueTypeF/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="400">
           <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Session.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="1500">
           <caret line="161" column="27" lean-forward="false" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#chooseSample#0;class#Session#0" expanded="false" />
-            <element signature="method#chooseInstruction#0;class#Session#0" expanded="false" />
-            <element signature="method#getInstruction#0;class#Session#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/InstructionsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ScreenSlidePageFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="30" column="3" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="365">
+          <caret line="38" column="73" lean-forward="true" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/InstructionsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/util/Zoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/model/SVFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="75" column="30" lean-forward="false" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+          <folding>
+            <element signature="method#clearPhase#0;class#SVFragment#0" expanded="false" />
+            <element signature="e#3613#4246#0" expanded="true" />
+            <element signature="e#3838#4107#0" expanded="true" />
+            <element signature="e#4106#4107#0" expanded="true" />
+            <element signature="e#4245#4246#0" expanded="true" />
+            <element signature="method#loadPhase#0;class#SVFragment#0" expanded="false" />
+            <element signature="e#4335#5830#0" expanded="true" />
+            <element signature="class#4629:5152" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#4629:5152" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#4629:5152" expanded="false" />
+            <element signature="class#5233:5691" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#5233:5691" expanded="false" />
+            <element signature="e#5829#5830#0" expanded="true" />
+            <element signature="method#displayResampleMessage#0;class#SVFragment#0" expanded="false" />
+            <element signature="e#6129#6974#0" expanded="true" />
+            <element signature="class#6395:6833" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#6395:6833" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#6395:6833" expanded="false" />
+            <element signature="e#6973#6974#0" expanded="true" />
+            <element signature="method#startSampleSession#0;class#SVFragment#0" expanded="false" />
+            <element signature="method#endSampleSession#0;class#SVFragment#0" expanded="false" />
+            <element signature="class#ToastHandler#0;class#SVFragment#0" expanded="false" />
+            <element signature="method#handleMessage#0;class#ToastHandler#0;class#SVFragment#0" expanded="false" />
+            <element signature="class#InstructionHandler#0;class#SVFragment#0" expanded="false" />
+            <element signature="method#handleMessage#0;class#InstructionHandler#0;class#SVFragment#0" expanded="false" />
+            <element signature="e#8398#8672#0" expanded="true" />
+            <element signature="e#8671#8672#0" expanded="true" />
+            <element signature="class#8745:9587" expanded="false" />
+            <element signature="method#handleMessage#0;class#8745:9587" expanded="false" />
+            <element signature="class#9138:9486" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#9138:9486" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#9138:9486" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartVueTypeF/src/main/java/com/vsu/smartvuetypef/features/ZoomFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="106" column="31" lean-forward="true" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3023#3024#0" expanded="true" />
+            <element signature="e#3054#3055#0" expanded="true" />
+            <element signature="method#clearPhase#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#loadPhase#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#5190:5713" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#5190:5713" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#5190:5713" expanded="false" />
+            <element signature="class#5794:6252" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#5794:6252" expanded="false" />
+            <element signature="method#displayResampleMessage#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#6956:7394" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#6956:7394" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#6956:7394" expanded="false" />
+            <element signature="method#playPhaseResult#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="e#7768#7770#0" expanded="false" />
+            <element signature="method#startSampleSession#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#endSampleSession#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="e#9331#9344#0" expanded="false" />
+            <element signature="method#checkForZoomChange#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#zoomInstructionCheck#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#onZoomChanged#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="e#10891#10930#0" expanded="false" />
+            <element signature="method#handleState#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#handleMessage#0;class#ZoomHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#ToastHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#handleMessage#0;class#ToastHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="method#handleMessage#0;class#InstructionHandler#0;class#ZoomFragment#0" expanded="false" />
+            <element signature="class#14142:14984" expanded="false" />
+            <element signature="method#handleMessage#0;class#14142:14984" expanded="false" />
+            <element signature="class#14535:14883" expanded="false" />
+            <element signature="method#onAnimationStart#0;class#14535:14883" expanded="false" />
+            <element signature="method#onAnimationEnd#0;class#14535:14883" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
