@@ -1,2 +1,2 @@
-include ':smartVueTypeF', ':opencv'
-
+rootProject.name='ML Kit Vision Quickstart'
+include ':app'

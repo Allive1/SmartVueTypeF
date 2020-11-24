@@ -1,4 +1,0 @@
-You will be shown different text samples at different letter sizes. 
-To change the text size, position the device at eye level
-To increase the font size, move the device closer to your face
-To decrease the font size, move the device farther from your face
