@@ -6,7 +6,7 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
-        applicationId "com.google.mlkit.vision.demo"
+        applicationId "com.omi.smartvue"
         minSdkVersion 16
         multiDexEnabled true
         targetSdkVersion 29
@@ -15,7 +15,7 @@ android {
         versionName "1.11"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
-        setProperty("archivesBaseName", "vision-quickstart")
+        setProperty("archivesBaseName", "smartvue")
     }
     buildTypes {
         proguard {
